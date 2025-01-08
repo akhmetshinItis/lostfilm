@@ -2878,11 +2878,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
       "projectName": "TemplateEngine.UnitTests",
-      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
       "packagesPath": "/Users/tagirahmetsin/.nuget/packages/",
-      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/TemplateEngine.UnitTests/obj/",
+      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemplateEngine.UnitTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tagirahmetsin/.nuget/NuGet/NuGet.Config"
@@ -2897,14 +2897,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/HttpServerLibrary/HttpServerLibrary.csproj": {
-              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/HttpServerLibrary/HttpServerLibrary.csproj"
+            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/HttpServerLibrary.csproj": {
+              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/HttpServerLibrary.csproj"
             },
-            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyWebServer/MyWebServer.csproj": {
-              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyWebServer/MyWebServer.csproj"
+            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/MyWebServer.csproj": {
+              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/MyWebServer.csproj"
             },
-            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/TemlateEngine/TemlateEngine.csproj": {
-              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/TemlateEngine/TemlateEngine.csproj"
+            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemlateEngine/TemlateEngine.csproj": {
+              "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemlateEngine/TemlateEngine.csproj"
             }
           }
         }

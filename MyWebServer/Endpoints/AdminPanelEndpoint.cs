@@ -6,6 +6,7 @@ using Microsoft.Data.SqlClient;
 using my_http.Helpers;
 using my_http.Models.AdminPanel;
 using my_http.Models.Entities;
+using MyHttp.Repositories;
 using MyORMLibrary;
 using TemlateEngine;
 
@@ -37,14 +38,13 @@ public class AdminPanelEndpoint : EndpointBase
     [Post("admin/movies/add")]
     public IHttpResponseResult AddMovie(Movie movie)
     {
-        using var connection = new SqlConnection(_appConfig.ConnectionString);
-        var dbContext = new ORMContext<Movie>(connection);
+        var repository = new Repository<Movie>();
         var titleEng = movie.TitleEng;
         var titleRu = movie.TitleRu;
         var releaseDateWorld = movie.ReleaseDateWorld;
         var releaseDateRu = movie.ReleaseDateRu;
         
-        var savedFilm = dbContext.FirstOrDefault(m =>
+        var savedFilm = repository.FirstOrDefault(m =>
             m.TitleEng == titleEng && m.TitleRu == titleRu && m.ReleaseDateWorld == releaseDateWorld &&
             m.ReleaseDateRu == releaseDateRu);
         if (savedFilm is not null)
@@ -53,8 +53,8 @@ public class AdminPanelEndpoint : EndpointBase
             return result1;
         }
 
-        dbContext.Create(movie);
-        savedFilm = dbContext.FirstOrDefault(m =>
+        repository.Create(movie);
+        savedFilm = repository.FirstOrDefault(m =>
             m.TitleEng == titleEng && m.TitleRu == titleRu && m.ReleaseDateWorld == releaseDateWorld &&
             m.ReleaseDateRu == releaseDateRu);
         movie.Id = savedFilm.Id;
@@ -65,8 +65,7 @@ public class AdminPanelEndpoint : EndpointBase
     [Post("admin/details/add")]
     public IHttpResponseResult AddDetails(MovieDetail detail)
     {
-        using var connection = new SqlConnection(_appConfig.ConnectionString);
-        var dbContext = new ORMContext<MovieDetail>(connection);
+        var repository = new Repository<MovieDetail>();
         
         var description = detail.Description;
         var movieId = detail.MovieId;
@@ -75,7 +74,7 @@ public class AdminPanelEndpoint : EndpointBase
         var type = detail.Type;
         var imageUrl = detail.ImageUrl;
         
-        var savedDetail = dbContext.FirstOrDefault(m => 
+        var savedDetail = repository.FirstOrDefault(m => 
             m.Description == description && m.MovieId == movieId && m.RatingIMDb == rating
             && m.Duration == duration && m.Type == type && m.ImageUrl == imageUrl);
         if (savedDetail is not null)
@@ -83,8 +82,8 @@ public class AdminPanelEndpoint : EndpointBase
             return Json(false);
         }
     
-        dbContext.Create(detail);
-        savedDetail = dbContext.FirstOrDefault(m => 
+        repository.Create(detail);
+        savedDetail = repository.FirstOrDefault(m => 
             m.Description == description && m.MovieId == movieId && m.RatingIMDb == rating
             && m.Duration == duration && m.Type == type && m.ImageUrl == imageUrl);
         detail.Id = savedDetail.Id;
@@ -95,22 +94,21 @@ public class AdminPanelEndpoint : EndpointBase
     [Post("admin/genres/add")]
     public IHttpResponseResult AddGenre(Genre genre)
     {
-        using var connection = new SqlConnection(_appConfig.ConnectionString);
-        var dbContext = new ORMContext<Genre>(connection);
+        var repository = new Repository<Genre>();
 
         var name = genre.Name;
         var description = genre.Description;
         var usages = genre.UsageCount;
         
-        var savedGenre = dbContext.FirstOrDefault(g => 
+        var savedGenre = repository.FirstOrDefault(g => 
             g.Description == description && g.Name == name && g.UsageCount == usages);
         if (savedGenre is not null)
         {
             return Json(false);
         }
     
-        dbContext.Create(genre);
-        savedGenre = dbContext.FirstOrDefault(g => 
+        repository.Create(genre);
+        savedGenre = repository.FirstOrDefault(g => 
             g.Description == description && g.Name == name && g.UsageCount == usages);
         genre.Id = savedGenre.Id;
         var result = Json(genre);
@@ -120,22 +118,21 @@ public class AdminPanelEndpoint : EndpointBase
     [Post("admin/moviesgenres/add")]
     public IHttpResponseResult AddMovieGenre(MovieGenre movieGenre)
     {
-        using var connection = new SqlConnection(_appConfig.ConnectionString);
-        var dbContext = new ORMContext<MovieGenre>(connection);
+        var repository = new Repository<MovieGenre>();
 
         var movieId = movieGenre.MovieId;
         var genreId = movieGenre.GenreId;
         var addedDate = movieGenre.AddedDate;
         
-        var savedMovieGenre = dbContext.FirstOrDefault(mg => 
+        var savedMovieGenre = repository.FirstOrDefault(mg => 
             mg.MovieId == movieId && mg.GenreId == genreId && mg.AddedDate == addedDate);
         if (savedMovieGenre is not null)
         {
             return Json(false);
         }
     
-        dbContext.Create(movieGenre);
-        savedMovieGenre = dbContext.FirstOrDefault(mg => 
+        repository.Create(movieGenre);
+        savedMovieGenre = repository.FirstOrDefault(mg => 
             mg.MovieId == movieId && mg.GenreId == genreId && mg.AddedDate == addedDate);
         movieGenre.Id = savedMovieGenre.Id;
         var result = Json(movieGenre);
@@ -145,22 +142,21 @@ public class AdminPanelEndpoint : EndpointBase
     [Post("admin/users/add")]
     public IHttpResponseResult AddUser(User user)
     {
-        using var connection = new SqlConnection(_appConfig.ConnectionString);
-        var dbContext = new ORMContext<User>(connection);
+        var repository = new Repository<User>();
 
         var username = user.Username;
         var login = user.Login;
         var password = user.Password;
         
-        var savedUser = dbContext.FirstOrDefault(u => 
+        var savedUser = repository.FirstOrDefault(u => 
             u.Login == login);
         if (savedUser is not null)
         {
             return Json(false);
         }
     
-        dbContext.Create(user);
-        savedUser = dbContext.FirstOrDefault(u => 
+        repository.Create(user);
+        savedUser = repository.FirstOrDefault(u => 
             u.Login == login);
         user.Id = savedUser.Id;
         var result = Json(user);
@@ -173,16 +169,14 @@ public class AdminPanelEndpoint : EndpointBase
     [Post("admin/movies/delete")]
     public IHttpResponseResult DeleteMovie(int MovieId)
     {
-        using var connection = new SqlConnection(_appConfig.ConnectionString);
-        var dbContext = new ORMContext<Movie>(connection);
-        dbContext.Delete(dbContext.GetById(MovieId));
+        var repository = new Repository<Movie>();
+        repository.Delete(repository.GetById(MovieId));
         return Redirect("/admin");
     }
     private List<T> GetData<T>() where T : class, new()
     {
-        using var connection = new SqlConnection(_appConfig.ConnectionString);
-        var dbContext = new ORMContext<T>(connection);
-        var users = dbContext.GetAll();
+        var repository = new Repository<T>();
+        var users = repository.GetAll();
         return users;
     }
 }

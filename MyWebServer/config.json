@@ -1,7 +1,7 @@
 {
   "Domain" : "localhost",
   "Port" : "8888", 
-  "StaticDirectoryPath" : "Views/Public",
+  "StaticDirectoryPath" : "Views/Public/",
   "EmailServiceConfiguration": {
     "Host": "smtp.gmail.com",
     "Port": "25",

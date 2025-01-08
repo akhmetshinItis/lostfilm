@@ -30,6 +30,12 @@
       <None Update="Views\Public\assets\js\indexScript.js">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Update="Views\Templates\Pages\MainPage\index.html">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Views\Public\styles\AdminPanel.css">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
     <ItemGroup>
         <None Update="Views\**">
@@ -48,7 +54,7 @@
       <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Views\" />
+      <Folder Include="Repositories\EntityRepositories\" />
     </ItemGroup>
 
 </Project>

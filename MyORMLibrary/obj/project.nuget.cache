@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gMfefx7XHHt3J6/HNSLOZ+Qdwyg+n79jsGPXS9rjcxGTTcnS2t8ftGpKB812bZJVReuXBBEhJRwsU75kmTNtUw==",
+  "dgSpecHash": "YhEK0aKuypV44Pv/2XiCJijYjPZWdkUAZbgGPQOEy/21J30gTk+v+wd1SmOqT6p42omTidwaS34vwaG3aR4kkA==",
   "success": true,
-  "projectFilePath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/MyORMLibrary.csproj",
+  "projectFilePath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/MyORMLibrary.csproj",
   "expectedPackageFiles": [
     "/Users/tagirahmetsin/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/tagirahmetsin/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

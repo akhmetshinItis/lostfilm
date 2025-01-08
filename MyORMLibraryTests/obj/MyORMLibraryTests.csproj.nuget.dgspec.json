@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibraryTests/MyORMLibraryTests.csproj": {}
+    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibraryTests/MyORMLibraryTests.csproj": {}
   },
   "projects": {
-    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/MyORMLibrary.csproj": {
+    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/MyORMLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/MyORMLibrary.csproj",
+        "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/MyORMLibrary.csproj",
         "projectName": "MyORMLibrary",
-        "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/MyORMLibrary.csproj",
+        "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/MyORMLibrary.csproj",
         "packagesPath": "/Users/tagirahmetsin/.nuget/packages/",
-        "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/obj/",
+        "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tagirahmetsin/.nuget/NuGet/NuGet.Config"
@@ -67,14 +67,14 @@
         }
       }
     },
-    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibraryTests/MyORMLibraryTests.csproj": {
+    "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibraryTests/MyORMLibraryTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibraryTests/MyORMLibraryTests.csproj",
+        "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibraryTests/MyORMLibraryTests.csproj",
         "projectName": "MyORMLibraryTests",
-        "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibraryTests/MyORMLibraryTests.csproj",
+        "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibraryTests/MyORMLibraryTests.csproj",
         "packagesPath": "/Users/tagirahmetsin/.nuget/packages/",
-        "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibraryTests/obj/",
+        "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibraryTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tagirahmetsin/.nuget/NuGet/NuGet.Config"
@@ -89,8 +89,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/MyORMLibrary.csproj": {
-                "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/MyORMLibrary.csproj"
+              "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/MyORMLibrary.csproj": {
+                "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/MyORMLibrary.csproj"
               }
             }
           }

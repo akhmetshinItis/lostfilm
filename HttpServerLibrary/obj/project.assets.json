@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/HttpServerLibrary/HttpServerLibrary.csproj",
+      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/HttpServerLibrary.csproj",
       "projectName": "HttpServerLibrary",
-      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/HttpServerLibrary/HttpServerLibrary.csproj",
+      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/HttpServerLibrary.csproj",
       "packagesPath": "/Users/tagirahmetsin/.nuget/packages/",
-      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/HttpServerLibrary/obj/",
+      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tagirahmetsin/.nuget/NuGet/NuGet.Config"

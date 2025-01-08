@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "osMQ5Oaswo/+1kNrf6+zX3IUkrjqJgz/9QZzRcyxLu4m9fEF0gxgD2fZNO0E+819Wza+KfRqe5FKsJTN0Hl5VA==",
+  "dgSpecHash": "4w1y8uTGGTtqk/hemqDwElQpV9rHk4vTg3rblhjEUSvwOewatufZSXwaAoElc2xS44JXk3/NP1/mxQxG5eAdcg==",
   "success": true,
-  "projectFilePath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
+  "projectFilePath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemplateEngine.UnitTests/TemplateEngine.UnitTests.csproj",
   "expectedPackageFiles": [
     "/Users/tagirahmetsin/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/tagirahmetsin/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

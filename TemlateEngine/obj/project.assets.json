@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/TemlateEngine/TemlateEngine.csproj",
+      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemlateEngine/TemlateEngine.csproj",
       "projectName": "TemlateEngine",
-      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/TemlateEngine/TemlateEngine.csproj",
+      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemlateEngine/TemlateEngine.csproj",
       "packagesPath": "/Users/tagirahmetsin/.nuget/packages/",
-      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/TemlateEngine/obj/",
+      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemlateEngine/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tagirahmetsin/.nuget/NuGet/NuGet.Config"

@@ -1836,11 +1836,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/MyORMLibrary.csproj",
+      "projectUniqueName": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/MyORMLibrary.csproj",
       "projectName": "MyORMLibrary",
-      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/MyORMLibrary.csproj",
+      "projectPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/MyORMLibrary.csproj",
       "packagesPath": "/Users/tagirahmetsin/.nuget/packages/",
-      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/obj/",
+      "outputPath": "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tagirahmetsin/.nuget/NuGet/NuGet.Config"

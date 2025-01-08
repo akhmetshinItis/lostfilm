@@ -34,8 +34,8 @@ document.getElementById('add-movie-form').addEventListener('submit', async funct
                 <td>${result.Id}</td>
                 <td>${result.TitleRu}</td>
                 <td>${result.TitleEng}</td>
-                <td>${result.ReleaseDateWorld}</td>
-                <td>${result.ReleaseDateRu}</td>
+                <td>${formatDate(result.ReleaseDateWorld)}</td>
+                <td>${formatDate(result.ReleaseDateRu)}</td>
             </tr>
         `;
         // Находим таблицу и добавляем новую строку
@@ -91,6 +91,7 @@ document.getElementById('add-movie-detail-form').addEventListener('submit', asyn
                 <td>${result.Type}</td>
                 <td>${result.Description}</td>
                 <td>${result.ImageUrl}</td>
+                <td>${result.Rating}</td>
             </tr>
         `;
 
@@ -267,3 +268,15 @@ document.getElementById('add-user-form').addEventListener('submit', async functi
         console.error('Ошибка при добавлении связи:', error);
     }
 });
+
+function formatDate(inputDate) {
+    const date = new Date(inputDate); // Преобразуем строку в объект Date
+    const day = String(date.getDate()).padStart(2, '0'); // Получаем день и добавляем ведущий ноль
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Получаем месяц (месяцы начинаются с 0)
+    const year = date.getFullYear(); // Получаем год
+    const hours = String(date.getHours()).padStart(2, '0'); // Часы
+    const minutes = String(date.getMinutes()).padStart(2, '0'); // Минуты
+    const seconds = String(date.getSeconds()).padStart(2, '0'); // Секунды
+
+    return `${day}.${month}.${year} ${hours}:${minutes}:${seconds}`;
+}

@@ -31,3 +31,15 @@
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/HttpServerLibrary/obj/Debug/net8.0/refint/HttpServerLibrary.dll
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/HttpServerLibrary/obj/Debug/net8.0/HttpServerLibrary.pdb
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/HttpServerLibrary/obj/Debug/net8.0/ref/HttpServerLibrary.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/bin/Debug/net8.0/HttpServerLibrary.deps.json
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/bin/Debug/net8.0/HttpServerLibrary.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/bin/Debug/net8.0/HttpServerLibrary.pdb
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/Debug/net8.0/HttpServerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/Debug/net8.0/HttpServerLibrary.AssemblyInfoInputs.cache
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/Debug/net8.0/HttpServerLibrary.AssemblyInfo.cs
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/Debug/net8.0/HttpServerLibrary.csproj.CoreCompileInputs.cache
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/Debug/net8.0/HttpServerLibrary.sourcelink.json
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/Debug/net8.0/HttpServerLibrary.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/Debug/net8.0/refint/HttpServerLibrary.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/Debug/net8.0/HttpServerLibrary.pdb
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/HttpServerLibrary/obj/Debug/net8.0/ref/HttpServerLibrary.dll

@@ -34,3 +34,16 @@
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/obj/Debug/net8.0/refint/MyORMLibrary.dll
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/obj/Debug/net8.0/MyORMLibrary.pdb
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyORMLibrary/obj/Debug/net8.0/ref/MyORMLibrary.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/bin/Debug/net8.0/MyORMLibrary.deps.json
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/bin/Debug/net8.0/MyORMLibrary.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/bin/Debug/net8.0/MyORMLibrary.pdb
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/MyORMLibrary.csproj.AssemblyReference.cache
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/MyORMLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/MyORMLibrary.AssemblyInfoInputs.cache
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/MyORMLibrary.AssemblyInfo.cs
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/MyORMLibrary.csproj.CoreCompileInputs.cache
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/MyORMLibrary.sourcelink.json
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/MyORMLibrary.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/refint/MyORMLibrary.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/MyORMLibrary.pdb
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyORMLibrary/obj/Debug/net8.0/ref/MyORMLibrary.dll

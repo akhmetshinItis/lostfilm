@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="./assets/css/AdminPanel.css">
+    <link rel="stylesheet" href="styles/AdminPanel.css">
     
 </head>
 <body>
@@ -71,6 +71,7 @@
             <th>Type</th>
             <th>Description</th>
             <th>ImageUrl</th>
+            <th>Rating</th>
         </tr>
         </thead>
         <tbody id="movie-details-table">
@@ -83,6 +84,7 @@
             <td>{{MovieDetail.Type}}</td>
             <td>{{MovieDetail.Description}}</td>
             <td>{{MovieDetail.ImageUrl}}</td>
+            <td>{{MovieDetail.Rating}}</td>
         </tr>
         {%/for%}
         </tbody>
@@ -96,6 +98,9 @@
         <label for="ratingIMDb">Rating IMDb:</label>
         <input type="number" step="0.1" id="ratingIMDb" name="RatingIMDb" required>
 
+        <label for="ratingIMDb">Rating</label>
+        <input type="number" step="0.1" id="rating" name="Rating" required>
+    
         <label for="duration">Duration (minutes):</label>
         <input type="number" id="duration" name="Duration" required>
 
