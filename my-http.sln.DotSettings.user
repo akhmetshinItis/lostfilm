@@ -1,0 +1,119 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/PencilsConfiguration/ActualSeverity/@EntryValue">INFO</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=10c4c441_002D17f5_002D4386_002D8e11_002D46c7c762ffc6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.Tests&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.SendHomeworkEndpointTests.SendEmailHomeworkShouldInvokeSendOnlyOnce&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.SendHomeworkEndpointTests&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;Project Location="/Users/tagirahmetsin/2nd course/oris/Oris actual/my-http/TemplateEngine.UnitTests" Presentation="&amp;lt;TemplateEngine.UnitTests&amp;gt;" /&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=155ff785_002D9da6_002D4bf8_002Db593_002Dfb7787bd3dcd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;Tests&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Project Location="/Users/tagirahmetsin/2nd course/oris/oris 05.11/my-http/Tests" Presentation="&amp;lt;Tests&amp;gt;" /&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1746f720_002D2e34_002D45f6_002Dbb5d_002Db0aa8bf876f4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SendEmailHomeworkShouldInvokeSendOnlyOnce" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.SendHomeworkEndpointTests.SendEmailHomeworkShouldInvokeSendOnlyOnce&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1a23a042_002D2230_002D4c50_002Daf1c_002Da18d806047e1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidUserWithListOfBooks_ReturnHtml" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidUserWithListOfBooks_ReturnHtml&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=266631b0_002Def3e_002D4f91_002D8341_002Daa2e371922da/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObject_ReturnHtml #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObject_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithVariants_ReturnHtml&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2b24c778_002Dec67_002D45bb_002Dbb9c_002D72347ca33666/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObject_ReturnHtml" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObject_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithVariants_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithFalseInIf_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithCollection_ReturnHtml&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=310038ee_002Daa03_002D4647_002D9fad_002De6f2106a6278/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObjectWithTrueInIf_ReturnHtml" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithTrueInIf_ReturnHtml&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=44b42bd8_002Def38_002D4df9_002Dbb83_002D50ca90265cdd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObjectWithTrueInIf_ReturnHtml #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5c50a494_002D21cb_002D49ad_002Da4eb_002D80b90f97e25d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SendEmailHomeworkShouldInvokeSendOnlyOnce #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.SendHomeworkEndpointTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.Tests.SendEmailAnimeShouldReturnJsonResult&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.Tests.SendLoginShouldInvokeSendOnlyOnce&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.Tests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=71df2e3c_002Dbd86_002D462c_002D9b36_002Ddee87250d464/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidUserWithListOfBooks_ReturnHtml #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9FD850E7-EE4C-4E3D-A773-246846174AB9::net8.0::MyORMLibraryTests.ORMContextTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.SendHomeworkEndpointTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7b2bd8ef_002D720d_002D4824_002Dac66_002D620916d7b221/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetHomeworkShouldReturnHtmlResponse" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.SendHomeworkEndpointTests.GetHomeworkShouldReturnHtmlResponse&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::404171D5-6624-4B6C-A1D5-7972C5A5F52C::net8.0::Tests.SendHomeworkEndpointTests.SendEmailHomeworkShouldInvokeSendOnlyOnce&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=7e6185fc_002D8345_002D4c64_002D883a_002D23429e56055b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Render_ValidObjectByFilePath_ReturnHtml" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;ProjectFile&gt;A1560E1E-97E2-4215-BECF-E3D768499580/f:HtmlTemplateEngineTests.cs&lt;/ProjectFile&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=89664525_002D6d91_002D4260_002D8ec0_002D9747a5ef486b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObjectWithCollection_ReturnHtml #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithCollection_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithFalseInIf_ReturnHtml&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9e720d05_002D378b_002D4dfe_002D9d81_002D15e7c894293c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObjectWithFalseInIf_ReturnHtml" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9eb664bd_002D37c3_002D4605_002D967c_002D7b249abfaf5d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObjectWithFalseInIf_ReturnHtml #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithFalseInIf_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectByFilePath_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidUserWithListOfBooks_ReturnHtml&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a6fbd782_002Dc488_002D4007_002Db1f4_002D30c28b086d79/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObjectWithTrueInIf_ReturnHtml #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithTrueInIf_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObject_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidTemplateAndData_ReturnHtml&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cf7a265c_002Dfecd_002D4d65_002Dbb93_002Dd6418fed1cc7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetResponseTextShouldReturnCorrectTextIfFileExits" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;Project Location="/Users/tagirahmetsin/2nd course/oris/oris 05.11/my-http/Tests" Presentation="&amp;lt;Tests&amp;gt;" /&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_VslidTemplateAndData_ReturnHtml&lt;/TestId&gt;
+      &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidTemplateAndData_ReturnHtml&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+    &lt;ProjectFile&gt;A1560E1E-97E2-4215-BECF-E3D768499580/f:HtmlTemplateEngineTests.cs&lt;/ProjectFile&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cf9fa26c_002D1436_002D4626_002Da647_002D3d0aa889afe1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObjectWithCollection_ReturnHtml" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithCollection_ReturnHtml&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e0dd1200_002D7d18_002D42c1_002D8a81_002D3ac96d49d413/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="HtmlTemplateEngineTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::9FD850E7-EE4C-4E3D-A773-246846174AB9::net8.0::MyORMLibraryTests.ORMContextTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

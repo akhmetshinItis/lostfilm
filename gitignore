@@ -601,7 +601,8 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
-
+.DS_Store
+.my-http.sln.DotSettings.user
 # JetBrains Rider
 
 ### VisualStudio Patch ###

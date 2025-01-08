@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./assets/css/AdminPanel.css">
+    
+</head>
+<body>
+<h1>Admin Panel</h1>
+
+<!-- Movies Section -->
+<section id="movies">
+    <h2>Movies</h2>
+    <table id="movies-table">
+        <thead>
+        <tr>
+            <th>MovieId</th>
+            <th>TitleRu</th>
+            <th>TitleEng</th>
+            <th>ReleaseDateWorld</th>
+            <th>ReleaseDateRU</th>
+        </tr>
+        </thead>
+        <tbody>
+        {%for%Movie%in%Movies}
+        <tr>
+            <td>{{Movie.Id}}</td>
+            <td>{{Movie.TitleRu}}</td>
+            <td>{{Movie.TitleEng}}</td>
+            <td>{{Movie.ReleaseDateWorld}}</td>
+            <td>{{Movie.ReleaseDateRu}}</td>
+        </tr>
+        {%/for%}
+        </tbody>
+    </table>
+
+    <form id="add-movie-form" action="admin/movies/add" method="post">
+        <h3>Add New Movie</h3>
+        <label for="titleRu">Title (RU):</label>
+        <input type="text" id="titleRu" name="TitleRu" required>
+
+        <label for="titleEng">Title (ENG):</label>
+        <input type="text" id="titleEng" name="TitleEng" required>
+
+        <label for="releaseDateWorld">Release Date (World):</label>
+        <input type="date" id="releaseDateWorld" name="ReleaseDateWorld" required>
+        <label for="releaseDateRu">Release Date (Ru):</label>
+        <input type="date" id="releaseDateRu" name="ReleaseDateRu" required>
+
+        <button type="submit">Add Movie</button>
+    </form>
+
+    <form action="admin/movies/delete" method="post">
+        <label for="movieId">MovieId:</label>
+        <input type="number" id="movieId" name="MovieId" required>
+        <button type="submit">Delete Movie</button>
+    </form>
+</section>
+
+<section id="movie-details">
+    <h2>Movie Details</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>MovieDetailId</th>
+            <th>MovieId</th>
+            <th>RatingIMDb</th>
+            <th>Duration</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>ImageUrl</th>
+        </tr>
+        </thead>
+        <tbody id="movie-details-table">
+        {%for%MovieDetail%in%MovieDetailsList}
+        <tr>
+            <td>{{MovieDetail.Id}}</td>
+            <td>{{MovieDetail.MovieId}}</td>
+            <td>{{MovieDetail.RatingIMDb}}</td>
+            <td>{{MovieDetail.Duration}}</td>
+            <td>{{MovieDetail.Type}}</td>
+            <td>{{MovieDetail.Description}}</td>
+            <td>{{MovieDetail.ImageUrl}}</td>
+        </tr>
+        {%/for%}
+        </tbody>
+    </table>
+
+    <form id="add-movie-detail-form" action="admin/details/add" method="post">
+        <h3>Add New Movie Detail</h3>
+        <label for="movieId">MovieId:</label>
+        <input type="number" id="movieId" name="MovieId" required>
+
+        <label for="ratingIMDb">Rating IMDb:</label>
+        <input type="number" step="0.1" id="ratingIMDb" name="RatingIMDb" required>
+
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" name="Duration" required>
+
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="Type" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="Description" required></textarea>
+        <label for="type">ImageUrl</label>
+        <input type="text" id="imageUrl" name="ImageUrl" required>
+        <button type="submit">Add Movie Detail</button>
+    </form>
+</section>
+
+<!-- Genres Section -->
+<section id="genres">
+    <h2>Genres</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>GenreId</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>UsageCount</th>
+        </tr>
+        </thead>
+        <tbody id="genres-table">
+        {%for%Genre%in%Genres}
+        <tr>
+            <td>{{Genre.Id}}</td>
+            <td>{{Genre.Name}}</td>
+            <td>{{Genre.Description}}</td>
+            <td>{{Genre.UsageCount}}</td>
+        </tr>
+        {%/for%}
+        </tbody>
+    </table>
+
+    <form id="add-genre-form" action="admin/genres/add" method="post">
+        <h3>Add New Genre</h3>
+        <label for="genreName">Name:</label>
+        <input type="text" id="genreName" name="Name" required>
+
+        <label for="GenreDescription">Description:</label>
+        <textarea id="GenreDescription" name="Description" required></textarea>
+
+        <label for="usageCount">Usage Count:</label>
+        <input type="number" id="usageCount" name="UsageCount" required>
+
+        <button type="submit">Add Genre</button>
+    </form>
+</section>
+
+<!-- MovieGenres Section -->
+<section id="movie-genres">
+    <h2>Movie Genres</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>MovieGenreId</th>
+            <th>MovieId</th>
+            <th>GenreId</th>
+            <th>AddedDate</th>
+        </tr>
+        </thead>
+        <tbody id="movie-genres-table">
+        {%for%MovieGenre%in%MovieGenres}
+        <tr>
+            <td>{{MovieGenre.Id}}</td>
+            <td>{{MovieGenre.MovieId}}</td>
+            <td>{{MovieGenre.GenreId}}</td>
+            <td>{{MovieGenre.AddedDate}}</td>
+        </tr>
+        {%/for%}
+        </tbody>
+    </table>
+
+    <form id="add-movie-genre-form" action="/admin/moviesgenres/add" method="post">
+        <h3>Add New Movie Genre</h3>
+        <label for="movieGenreMovieId">MovieId:</label>
+        <input type="number" id="movieGenreMovieId" name="MovieId" required>
+
+        <label for="movieGenreGenreId">GenreId:</label>
+        <input type="number" id="movieGenreGenreId" name="GenreId" required>
+        <label for="movieGenreGenreId">AddedDate:</label>
+        <input type="date" id="movieGenreAddedDate" name="AddedDate" required>
+
+        <button type="submit">Add Movie Genre</button>
+    </form>
+</section>
+
+<!-- Users Section -->
+<section id="users">
+    <h2>Users</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>UserId</th>
+            <th>Username</th>
+            <th>Login</th>
+            <th>Password</th>
+        </tr>
+        </thead>
+        <tbody id="users-table">
+        {%for%User%in%Users}
+        <tr>
+            <td>{{User.Id}}</td>
+            <td>{{User.Username}}</td>
+            <td>{{User.Login}}</td>
+            <td>{{User.Password}}</td>
+        </tr>
+        {%/for%}
+        </tbody>
+    </table>
+
+    <form id="add-user-form" action="admin/users/add" method="post">
+        <h3>Add New User</h3>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="Username" required>
+
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="Login" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="Password" required>
+
+        <button type="submit">Add User</button>
+    </form>
+</section>
+</body>
+<script src="./assets/js/indexScript.js"></script>
+</html>

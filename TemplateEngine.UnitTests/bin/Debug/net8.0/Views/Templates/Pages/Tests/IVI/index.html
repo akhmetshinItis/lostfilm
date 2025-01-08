@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ivi/styles/variables.css" />
+    <link rel="stylesheet" href="ivi/styles/index.css" />
+    <link rel="stylesheet" href="ivi/styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Ivi</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <div class="header__left">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <img
+                  class="nav__logo"
+                  src="https://solea-parent.dfs.ivi.ru/picture/f30745,ffffff/reposition_iviLogoPlateRounded.svg"
+                  alt=""
+                />
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Мой Иви</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Фильмы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Сериалы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Мультфильмы</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">ТВ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <ul class="header__right-list">
+            <li class="header__right-item">
+              <button class="header__button">Оплатить подписку</button>
+            </li>
+            <li class="header__right-item">
+              <div class="header__search search">
+                <a class="search__link" href="">
+                  <img
+                    class="search__icon"
+                    src="ivi/assets/icons/search.svg"
+                    alt=""
+                  />
+                  <!-- Todo -->
+                  <p class="seach__text">Поиск</p>
+                </a>
+              </div>
+            </li>
+            <li class="header__right-item">
+              <img
+                class="header__notification"
+                src="ivi/assets/icons/notification.svg"
+                alt=""
+              />
+              <div class="header__notification--decorated"></div>
+            </li>
+            <li class="header__right-item">
+              <button class="sign-button">
+                <img
+                  class="sign-button__icon"
+                  src="ivi/assets/icons/person.svg"
+                  alt=""
+                />
+                <span class="sign-button__text">Войти</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="slider-container">
+          <section class="slider">
+            <img
+              class="slider__arrow slider__arrow--left"
+              src="ivi/assets/icons/arrow.svg"
+              alt=""
+            />
+            <ul class="slider__list">
+              <li class="slider__item">
+                <h2 class="slider__title">Лучшее в 2024</h2>
+                <p class="slider__subtitle">
+                  Фильмы и сериалы, сделавшие 2024 по-настоящему
+                  <br />незабываемым
+                </p>
+                <button class="slider__button">Показать подборку</button>
+              </li>
+              <li class="slider__item">
+                <h2 class="slider__title">Новогодние фильмы</h2>
+                <p class="slider__subtitle">
+                  Лучшее кино к лучшему из праздников
+                </p>
+                <button class="slider__button">Показать подборку</button>
+              </li>
+              <li class="slider__item">
+                <h2 class="slider__title">Новогодние фильмы</h2>
+                <p class="slider__subtitle">
+                  Лучшее кино к лучшему из праздников
+                </p>
+                <button class="slider__button">Показать подборку</button>
+              </li>
+              <li class="slider__item">
+                <h2 class="slider__title">Новогодние фильмы</h2>
+                <p class="slider__subtitle">
+                  Лучшее кино к лучшему из праздников
+                </p>
+                <button class="slider__button">Показать подборку</button>
+              </li>
+            </ul>
+            <img
+              class="slider__arrow slider__arrow--right"
+              src="ivi/assets/icons/arrow.svg"
+              alt=""
+            />
+          </section>
+        </div>
+        <section class="subscribe">
+          <button class="subscribe__buy-btn">
+            <img
+              class="subscribe__img"
+              src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/lightning.svg"
+              alt=""
+            />
+            60 дней подписки бесплатно
+          </button>
+        </section>
+        <section class="carousel">
+          <div class="carousel__title">
+            <h3 class="carousel__name">Российские комедии</h3>
+            <img class="carousel__arrow" src="ivi/assets/icons/arrow.svg" alt="" />
+          </div>
+          <div class="film-gallery">
+            <ul class="film-gallery__list">
+              {%for%User%in%Users}
+              <li class="film-gallery__item">
+                <img
+                        class="film-gallery__img"
+                        src="https://sun9-41.userapi.com/impg/FrQY84TspZcbFaz0HPeEK2MJmgIARSaawTcgSQ/JP9qv7u80M8.jpg?size=427x640&quality=95&sign=af561caf4f0d166bf6d06ed334c3fcab&c_uniq_tag=_BzRTJzfKzfu6oYPvO1aPXazksi7PqFZpTV54mMoLxM&type=video_thumb"
+                        alt=""
+                />
+                <p class="film-gallery__name">{{User.Name}}</p>
+                <p class="film-gallery__access">{{User.Login}}</p>
+              </li>
+              {%/for%}
+              <!--              start-->
+<!--              <li class="film-gallery__item">-->
+<!--                <img-->
+<!--                  class="film-gallery__img"-->
+<!--                  src="https://sun9-41.userapi.com/impg/FrQY84TspZcbFaz0HPeEK2MJmgIARSaawTcgSQ/JP9qv7u80M8.jpg?size=427x640&quality=95&sign=af561caf4f0d166bf6d06ed334c3fcab&c_uniq_tag=_BzRTJzfKzfu6oYPvO1aPXazksi7PqFZpTV54mMoLxM&type=video_thumb"-->
+<!--                  alt=""-->
+<!--                />-->
+<!--                <p class="film-gallery__name">Папу маме заверни</p>-->
+<!--                <p class="film-gallery__access">Подписка</p>-->
+<!--              </li>-->
+<!--              finish-->
+              
+
+              <!-- <li class="film-gallery__item">
+                <img class="film-gallery__img" src="" alt="" />
+                <p class="film-gallery__name"></p>
+                <p class="film-gallery__access"></p>
+              </li>
+              <li class="film-gallery__item">
+                <img class="film-gallery__img" src="" alt="" />
+                <p class="film-gallery__name"></p>
+                <p class="film-gallery__access"></p>
+              </li> -->
+            </ul>
+            <img
+              class="film-gallery__button-next"
+              src="ivi/assets/icons/arrow.svg"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="hidden-text">
+          <h3 class="hidden-text__title">
+            Онлайн-кинотеатр Иви: фильмы в хорошем качестве всегда приносят
+            настоящее удовольствие
+          </h3>
+          <input
+            class="hidden-text__checkbox"
+            id="hidden-text__checkbox"
+            type="checkbox"
+          />
+          <p class="hidden-text__visible">
+            Случалось ли вам отказаться от просмотра интересного фильма из-за
+            того, что его показывали в неудобное время? Приходилось ли искать в
+            сети интернет, где смотреть фильмы онлайн? А спорить с домашними
+            из-за выбора кино для
+            <span class="hidden-text__hidden">просмотра по ТВ? </span>
+          </p>
+          <p class="hidden-text__hidden--paragraph">
+            Все эти проблемы остались в прошлом! Откройте для себя фильмы онлайн
+            в HD-качестве с кинотеатром Иви. Мы не просто освобождаем вас от
+            необходимости идти в кинотеатр или изучать программу телепередач – у
+            посетителей нашего ресурса гораздо больше возможностей.
+          </p>
+          <p class="hidden-text__hidden--paragraph">
+            Онлайн-кинотеатр Иви – это самая большая коллекция отечественных и
+            зарубежных фильмов в рунете. Наша видеотека насчитывает более 30
+            тысяч фильмов и видеороликов, доступных для просмотра онлайн, и
+            постоянно пополняется.
+          </p>
+          <p class="hidden-text__hidden--paragraph">
+            Онлайн-кинотеатр ivi.tv – это:
+          </p>
+          <ul class="hidden-text__list">
+            <li>
+              Первый видеосервис в России, который позволяет смотреть фильмы
+              онлайн в хорошем качестве;
+            </li>
+            <li>
+              Возможность отложить просмотр фильма на время или начать смотреть
+              кино онлайн с любого момента;
+            </li>
+            <li>
+              Удобный поиск фильмов: по названию, году выпуска, стране
+              производства или жанру;
+            </li>
+            <li>
+              Фильмы в онлайне, для просмотра которых не требуется устанавливать
+              видеоплееры или искать кодеки;
+            </li>
+          </ul>
+          <p class="hidden-text__hidden--paragraph">
+            Регулярно мы добавляем на сайт самые свежие комедии, лучшие
+            фильмы-приключения, боевики, фильмы ужасов, триллеры и исторические
+            драмы. <br />
+            Откройте для себя возможность смотреть фильмы онлайн в отличном
+            качестве с кинотеатром Иви!
+          </p>
+          <p class="hidden-text__hidden--paragraph">
+            Убедитесь в том, что смотреть онлайн – просто и удобно!
+          </p>
+          <label class="hidden-text__label" for="hidden-text__checkbox"></label>
+        </section>
+      </main>
+    </div>
+
+    <script src="ivi/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "Domain" : "localhost",
+  "Port" : "8888", 
+  "StaticDirectoryPath" : "Views/Public",
+  "EmailServiceConfiguration": {
+    "Host": "smtp.gmail.com",
+    "Port": "25",
+    "UserName": "cataha.c.pemhem@gmail.com",
+    "Password": "mqzfiwnmzsufrwpr"
+  },
+  "ConnectionString" : "Data Source=localhost;Initial Catalog=MoviesCatalog;User ID=sa;Password=P@ssw0rd;Trust Server Certificate=true;"
+}

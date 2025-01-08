@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Login</td>
+        <td>Password</td>
+    </tr>
+    {%for%User%in%Users}
+    <tr>
+        <td>{{User.Id}}</td>
+        <td>{{User.Name}}</td>
+        <td>{{User.Login}}</td>
+        <td>{{User.Password}}</td>
+    </tr>
+    {%/for%} 
+</table>
+</body>
+</html>
