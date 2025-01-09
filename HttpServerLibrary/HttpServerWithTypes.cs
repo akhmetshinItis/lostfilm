@@ -72,15 +72,17 @@ public class HttpServerWithTypes
     /// работает все время пока <see cref="_listener"/>
     /// слушает префиксы
     /// </summary>
+    
+    
     private async void Receive()
     {
         while (_listener.IsListening)
         {
             var context = _listener.GetContext();
             HandleRequest(context);
-            //Console.WriteLine("Receiving context");
         }
     }
+    
 
     /// <summary>
     /// метод обработки пришедшего контекста
@@ -117,4 +119,5 @@ public class HttpServerWithTypes
         //     
         // }
     }
+
 }

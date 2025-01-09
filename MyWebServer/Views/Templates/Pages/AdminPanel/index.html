@@ -21,6 +21,7 @@
             <th>TitleEng</th>
             <th>ReleaseDateWorld</th>
             <th>ReleaseDateRU</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody>
@@ -31,6 +32,14 @@
             <td>{{Movie.TitleEng}}</td>
             <td>{{Movie.ReleaseDateWorld}}</td>
             <td>{{Movie.ReleaseDateRu}}</td>
+            <td>
+                <form action="admin/movies/update" method="get">
+                    <input type="hidden" name="id" value="{{Movie.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
@@ -72,6 +81,8 @@
             <th>Description</th>
             <th>ImageUrl</th>
             <th>Rating</th>
+            <th>Website</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody id="movie-details-table">
@@ -85,6 +96,15 @@
             <td>{{MovieDetail.Description}}</td>
             <td>{{MovieDetail.ImageUrl}}</td>
             <td>{{MovieDetail.Rating}}</td>
+            <td>{{MovieDetail.Website}}</td>
+            <td>
+                <form action="admin/details/update" method="get">
+                    <input type="hidden" name="id" value="{{MovieDetail.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
@@ -107,6 +127,9 @@
         <label for="type">Type:</label>
         <input type="text" id="type" name="Type" required>
 
+        <label for="website">Website</label>
+        <input type="text" id="website" name="Website">
+
         <label for="description">Description:</label>
         <textarea id="description" name="Description" required></textarea>
         <label for="type">ImageUrl</label>
@@ -125,6 +148,7 @@
             <th>Name</th>
             <th>Description</th>
             <th>UsageCount</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody id="genres-table">
@@ -134,6 +158,14 @@
             <td>{{Genre.Name}}</td>
             <td>{{Genre.Description}}</td>
             <td>{{Genre.UsageCount}}</td>
+            <td>
+                <form action="admin/genres/update" method="get">
+                    <input type="hidden" name="id" value="{{Genre.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
@@ -164,6 +196,7 @@
             <th>MovieId</th>
             <th>GenreId</th>
             <th>AddedDate</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody id="movie-genres-table">
@@ -173,6 +206,14 @@
             <td>{{MovieGenre.MovieId}}</td>
             <td>{{MovieGenre.GenreId}}</td>
             <td>{{MovieGenre.AddedDate}}</td>
+            <td>
+                <form action="admin/moviesgenres/update" method="get">
+                    <input type="hidden" name="id" value="{{MovieGenre.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
@@ -202,6 +243,7 @@
             <th>Username</th>
             <th>Login</th>
             <th>Password</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody id="users-table">
@@ -211,6 +253,14 @@
             <td>{{User.Username}}</td>
             <td>{{User.Login}}</td>
             <td>{{User.Password}}</td>
+            <td>
+                <form action="admin/users/update" method="get">
+                    <input type="hidden" name="id" value="{{User.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
@@ -225,7 +275,7 @@
         <input type="text" id="login" name="Login" required>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="Password" required>
+        <input type="text" id="password" name="Password" required>
 
         <button type="submit">Add User</button>
     </form>

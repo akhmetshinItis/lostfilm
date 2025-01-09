@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/AdminPanel.css">
+    <meta charset="UTF-8">
+    <title>Update User</title>
+</head>
+<body>
+<form id="update-user-form" action="" method="post">
+    <h3>Update User</h3>
+
+    <label for="Id">Id</label>
+    <input type="text" id="Id" name="Id" value="{{Id}}" readonly>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="Username" value="{{Username}}">
+
+    <label for="login">Login:</label>
+    <input type="text" id="login" name="Login" value="{{Login}}">
+
+    <label for="password">Password:</label>
+    <input type="text" id="password" name="Password" value="{{Password}}">
+
+    <button type="submit">Update User</button>
+</form>
+<script src="/assets/js/UpdateUserScript.js"></script>
+</body>
+</html>

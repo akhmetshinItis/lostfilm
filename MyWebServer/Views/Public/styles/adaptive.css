@@ -35,7 +35,7 @@
   }
 
   .header__logo {
-    width: 15vw;
+    width: 26vw;
     height: auto;
   }
 
@@ -331,6 +331,16 @@
     width: 100%;
     height: 14vh;
     object-fit: cover;
+  }
+
+  .episodes__info {
+    font-size: 5px;
+    padding: 5px;
+  }
+
+  .episodes__link {
+    font-size: 5px;
+    padding: 10px;
   }
 
   .footer {

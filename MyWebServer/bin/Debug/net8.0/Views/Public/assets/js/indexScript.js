@@ -36,6 +36,14 @@ document.getElementById('add-movie-form').addEventListener('submit', async funct
                 <td>${result.TitleEng}</td>
                 <td>${formatDate(result.ReleaseDateWorld)}</td>
                 <td>${formatDate(result.ReleaseDateRu)}</td>
+                <td>
+                    <form action="admin/movies/update" method="get">
+                        <input type="hidden" name="id" value="${result.Id}" />
+                        <button type="submit" style="all: unset;">
+                            Update
+                        </button>
+                    </form>
+                </td>
             </tr>
         `;
         // Находим таблицу и добавляем новую строку
@@ -59,6 +67,7 @@ document.getElementById('add-movie-detail-form').addEventListener('submit', asyn
     const data = Object.fromEntries(formData.entries());
     data.MovieId = parseInt(data.MovieId); // Преобразуем MovieId в число
     data.RatingIMDb = parseFloat(data.RatingIMDb); // Преобразуем RatingIMDb в число с плавающей точкой
+    data.Rating = parseFloat(data.Rating)
     data.Duration = parseInt(data.Duration); // Преобразуем Duration в число
     try {
         // Выполняем AJAX-запрос
@@ -92,6 +101,15 @@ document.getElementById('add-movie-detail-form').addEventListener('submit', asyn
                 <td>${result.Description}</td>
                 <td>${result.ImageUrl}</td>
                 <td>${result.Rating}</td>
+                <td>${result.Website}</td>
+                <td>
+                    <form action="admin/details/update" method="get">
+                        <input type="hidden" name="id" value="${result.Id}" />
+                        <button type="submit" style="all: unset;">
+                            Update
+                        </button>
+                    </form>
+                </td>
             </tr>
         `;
 
@@ -145,6 +163,14 @@ document.getElementById('add-genre-form').addEventListener('submit', async funct
                 <td>${result.Name}</td>
                 <td>${result.Description}</td>
                 <td>${result.UsageCount}</td>
+                <td>
+                    <form action="admin/genres/update" method="get">
+                        <input type="hidden" name="id" value="${result.Id}" />
+                        <button type="submit" style="all: unset;">
+                            Update
+                        </button>
+                    </form>
+                </td>
             </tr>
         `;
 
@@ -171,7 +197,7 @@ document.getElementById('add-movie-genre-form').addEventListener('submit', async
     data.MovieId = parseInt(data.MovieId);
     data.GenreId = parseInt(data.GenreId);
     console.log(data)
-
+    let result = null;
     try {
         // Выполняем AJAX-запрос
         const response = await fetch('/admin/moviesgenres/add', { // Укажите правильный URL для обработки запроса
@@ -185,8 +211,12 @@ document.getElementById('add-movie-genre-form').addEventListener('submit', async
         if (!response.ok) {
             throw new Error('Ошибка при отправке данных');
         }
-
-        const result = await response.json();
+        try {
+            result = await response.json();
+        }
+        catch (error){
+            result = response.text();
+        }
         if (result == false) {
             alert('Такая связь уже существует');
             throw new Error('Такая связь уже существует');
@@ -199,7 +229,15 @@ document.getElementById('add-movie-genre-form').addEventListener('submit', async
                 <td>${result.Id}</td>
                 <td>${result.MovieId}</td>
                 <td>${result.GenreId}</td>
-                <td>${result.AddedDate}</td>
+                <td>${formatDate(result.AddedDate)}</td>
+                <td>
+                    <form action="admin/moviesgenres/update" method="get">
+                        <input type="hidden" name="id" value="${result.Id}" />
+                        <button type="submit" style="all: unset;">
+                            Update
+                        </button>
+                    </form>
+                </td>
             </tr>
         `;
 
@@ -254,6 +292,14 @@ document.getElementById('add-user-form').addEventListener('submit', async functi
                 <td>${result.Login}</td>
                 <td>${result.Username}</td>
                 <td>${result.Password}</td>
+                <td>
+                    <form action="admin/users/update" method="get">
+                        <input type="hidden" name="id" value="${result.Id}" />
+                        <button type="submit" style="all: unset;">
+                            Update
+                        </button>
+                    </form>
+                </td>
             </tr>
         `;
 

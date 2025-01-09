@@ -97,7 +97,6 @@
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/семестровка/MyWebServer/bin/Debug/net8.0/Views/Public/styles/AdminPanel.css
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/MyWebServer
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/config.json
-/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/404.html
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/assets/icons/arrow-up.svg
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/assets/icons/arrow.svg
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/assets/icons/play.svg
@@ -113,7 +112,6 @@
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/styles/Sign-In.css
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/styles/variables.css
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/AdminPanel/index.html
-/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/MainPage/index.html
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/MyWebServer.deps.json
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/MyWebServer.runtimeconfig.json
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/MyWebServer.dll
@@ -193,3 +191,19 @@
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/obj/Debug/net8.0/MyWebServer.pdb
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/obj/Debug/net8.0/MyWebServer.genruntimeconfig.cache
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/obj/Debug/net8.0/ref/MyWebServer.dll
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/UpdatePages/Update-Movie.html
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/assets/js/UpdateMovieScript.js
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/assets/js/UpdateMovieDetailScript.js
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/UpdatePages/Update-MovieDetails.html
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/assets/js/UpdateGenreScript.js
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/UpdatePages/Update-Genre.html
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/assets/js/UpdateMovieGenreScript.js
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/UpdatePages/Update-MovieGenre.html
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/assets/js/UpdateUserScript.js
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/UpdatePages/Update-User.html
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/styles/film-page.css
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/FilmPage/film-page.html
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/assets/images/red-btn.png
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/404.html
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/MainPage/index.html
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/ErrorPage/Error.html

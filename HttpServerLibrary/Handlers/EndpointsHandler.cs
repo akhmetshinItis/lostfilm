@@ -55,6 +55,7 @@ public sealed class EndpointsHandler : Handler
                     endpointInstance.SetContext(context);
                     // вызываем метод
                     var parameters = GetMethodParameters(route.methodInfo, context); //try catch (response 500)
+                    
                     var result = route.methodInfo.Invoke(endpointInstance, parameters) as IHttpResponseResult;
                     result?.Execute(context);
                 }

@@ -73,7 +73,7 @@
               {%if<{{IsAuthorized}}>%}
               <p class="start__link"> {{Username}} </p>
               {%else%}
-              <a class="start__link" href=""> Войти </a>
+              <a class="start__link" href="login"> Войти </a>
               {%/if%}
             </div>
           </section>
@@ -118,6 +118,9 @@
                 <div class="film-info">
                   <ul class="film-info__list">
                     {%for%MovieCard%in%MovieCards}
+                    <form action="film" method="get">
+                      <input type="hidden" name="id" value="{{MovieCard.Id}}" />
+                      <button type="submit" style="background-color:transparent; all: unset; z-index: 1; cursor: pointer;">
                     <li class="film-info__film">
                       <img
                         class="film-info__img"
@@ -154,6 +157,8 @@
                           </div>
                         </div>
                       </div>
+                      </button>
+                    </form>
                     </li>
                     {%/for%}
                   </ul>

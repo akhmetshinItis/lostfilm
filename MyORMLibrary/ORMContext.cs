@@ -146,10 +146,6 @@ public class ORMContext<T> where T : class, new()
         }
     }
     
-    public T Where()
-    {
-        throw new NotImplementedException();
-    }
     
     private T Map(IDataReader reader)
     {
@@ -163,7 +159,6 @@ public class ORMContext<T> where T : class, new()
                 property.SetValue(obj, reader[property.Name]);
             }
         }
-        // _dbConnection.Close(); //это нужно для работы FirstOrDefault
         return obj;
     }
     

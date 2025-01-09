@@ -46,7 +46,8 @@ body {
 
 .header__nav--left {
   background-color: white;
-  padding: 8px;
+  padding: 6px;
+  padding-bottom: 7px;
 }
 
 .header__list {
@@ -70,7 +71,7 @@ body {
 
 .header__nav--right {
   background-color: rgb(234, 234, 234);
-  padding: 8px 14px 6px 9px;
+  padding: 5px 14px 6px 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +83,7 @@ body {
 }
 
 .start {
-  margin-top: 8px;
+  margin-top: 5px;
   display: flex;
   gap: 10px;
 }
@@ -320,24 +321,26 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.85);
   color: white;
-  padding: 5px;
+  padding: 10px;
   text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 6px;
+  font-size: 12px;
   font-weight: bold;
 }
+
+
 
 .episodes__link {
   display: inline-flex;
   align-items: center;
   gap: 3px;
-  font-size: 5px;
+  font-size: 10px;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 20px;
 }
 
 .episodes__number {

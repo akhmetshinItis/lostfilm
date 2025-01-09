@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/AdminPanel.css">
+    <meta charset="UTF-8">
+    <title>Update Genre</title>
+</head>
+<body>
+<form id="update-genre-form" action="" method="post">
+    <h3>Update Genre</h3>
+
+    <label for="Id">Id</label>
+    <input type="text" id="Id" name="Id" value="{{Id}}" readonly>
+
+    <label for="genreName">Name:</label>
+    <input type="text" id="genreName" name="Name" value="{{Name}}">
+
+    <label for="GenreDescription">Description:</label>
+    <textarea id="GenreDescription" name="Description">{{Description}}</textarea>
+
+    <label for="usageCount">Usage Count:</label>
+    <input type="number" id="usageCount" name="UsageCount" value="{{UsageCount}}">
+
+    <button type="submit">Update Genre</button>
+</form>
+<script src="/assets/js/UpdateGenreScript.js"></script>
+</body>
+</html>

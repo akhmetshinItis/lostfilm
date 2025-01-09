@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/AdminPanel.css">
+    <meta charset="UTF-8">
+    <title>Update Movie Detail</title>
+</head>
+<body>
+<form id="update-movie-detail-form" action="" method="post">
+    <h3>Update Movie Detail</h3>
+
+    <label for="Id">Id</label>
+    <input type="text" id="Id" name="Id" value="{{Id}}" readonly>
+
+    <label for="movieId">MovieId:</label>
+    <input type="number" id="movieId" name="MovieId" value="{{MovieId}}" readonly>
+
+    <label for="ratingIMDb">Rating IMDb:</label>
+    <input type="number" step="0.1" id="ratingIMDb" name="RatingIMDb" value="{{RatingIMDb}}">
+
+    <label for="rating">Rating:</label>
+    <input type="number" step="0.1" id="rating" name="Rating" value="{{Rating}}">
+
+    <label for="duration">Duration (minutes):</label>
+    <input type="number" id="duration" name="Duration" value="{{Duration}}">
+
+    <label for="type">Type:</label>
+    <input type="text" id="type" name="Type" value="{{Type}}">
+
+    <label for="website">Website</label>
+    <input type="text" id="website" name="Website" value="{{Website}}">
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="Description">{{Description}}</textarea>
+
+    <label for="imageUrl">ImageUrl:</label>
+    <input type="text" id="imageUrl" name="ImageUrl" value="{{ImageUrl}}">
+
+    <button type="submit">Update Movie Detail</button>
+</form>
+<script src="/assets/js/UpdateMovieDetailScript.js"></script>
+</body>
+</html>

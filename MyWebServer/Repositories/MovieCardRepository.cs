@@ -40,6 +40,7 @@ public class MovieCardRepository
 
             return new MovieCardVm
             {
+                Id = movie.Id,
                 TitleRu = movie.TitleRu,
                 TitleEng = movie.TitleEng,
                 ReleaseYear = movie.ReleaseDateWorld.Year.ToString(),

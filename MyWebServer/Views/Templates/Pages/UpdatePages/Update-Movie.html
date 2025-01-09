@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/AdminPanel.css">
+    <meta charset="UTF-8">
+    <title>{{TitleRu}}</title>
+</head>
+<body>
+<form id="update-movie-form" action="" method="post">
+    <h3>Update Movie</h3>
+    <label for="Id">Id</label>
+    <input type="text" id="Id" name="Id" value="{{Id}}" readonly>
+
+    <label for="titleRu">Title (RU):</label>
+    <input type="text" id="titleRu" name="TitleRu" value="{{TitleRu}}">
+
+    <label for="titleEng">Title (ENG):</label>
+    <input type="text" id="titleEng" name="TitleEng" value="{{TitleEng}}">
+
+    <label for="releaseDateWorld">Release Date (World):</label>
+    <input type="date" id="releaseDateWorld" name="ReleaseDateWorld" value="{{ReleaseDateWorld}}">
+
+    <label for="releaseDateRu">Release Date (Ru):</label>
+    <input type="date" id="releaseDateRu" name="ReleaseDateRu" value="{{ReleaseDateRu}}">
+
+    <button type="submit">Update Movie</button>
+</form>
+</body>
+<script src="/assets/js/UpdateMovieScript.js"></script>
+</html>
