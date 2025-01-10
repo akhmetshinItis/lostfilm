@@ -6,6 +6,7 @@ using Microsoft.Data.SqlClient;
 using my_http.Helpers;
 using my_http.Models.AdminPanel;
 using my_http.Models.Entities;
+using my_http.Repositories.EntityRepositories;
 using MyHttp.Repositories;
 using MyORMLibrary;
 using TemlateEngine;
@@ -130,7 +131,12 @@ public class AdminPanelEndpoint : EndpointBase
         {
             return Json(false);
         }
-    
+
+        if (!ValidateMovieGenreConstraint(movieGenre.MovieId, movieGenre.GenreId))
+        {
+            //знаю что так нельзя, но в теории ничего страшного
+            return Json(1);
+        }
         repository.Create(movieGenre);
         savedMovieGenre = repository.FirstOrDefault(mg => 
             mg.MovieId == movieId && mg.GenreId == genreId && mg.AddedDate == addedDate);
@@ -170,7 +176,14 @@ public class AdminPanelEndpoint : EndpointBase
     public IHttpResponseResult DeleteMovie(int MovieId)
     {
         var repository = new Repository<Movie>();
-        repository.Delete(repository.GetById(MovieId));
+        try
+        {
+            repository.Delete(repository.GetById(MovieId));
+        }
+        catch (Exception e)
+        {
+            return Redirect($"/error?error={e.ToString()}");
+        }
         return Redirect("/admin");
     }
     private List<T> GetData<T>() where T : class, new()
@@ -178,5 +191,14 @@ public class AdminPanelEndpoint : EndpointBase
         var repository = new Repository<T>();
         var users = repository.GetAll();
         return users;
+    }
+
+    private bool ValidateMovieGenreConstraint(int movieId, int genreId)
+    {
+        var movieRepository = new MovieRepository();
+        var movie = movieRepository.GetById(movieId);
+        var genreRepository = new GenreRepository();
+        var genre = genreRepository.GetById(genreId);
+        return genre is not null && movie is not null;
     }
 }

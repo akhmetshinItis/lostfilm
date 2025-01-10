@@ -82,7 +82,6 @@ public class HttpServerWithTypes
             HandleRequest(context);
         }
     }
-    
 
     /// <summary>
     /// метод обработки пришедшего контекста

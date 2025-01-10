@@ -33,6 +33,7 @@ public class FilmPageEndpoint : EndpointBase
         CheckAuthorization(model);
         var page = _htmlTemplateEngine.Render(responseText, model);
         return Html(page);
+        
     }
     
     private void CheckAuthorization(FilmPageDataVm model)

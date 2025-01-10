@@ -134,14 +134,27 @@ public class ORMContext<T> where T : class, new()
         {
             var result = new List<T>();
             command.CommandText = query;
-            _dbConnection.Open();
-            using (var reader = command.ExecuteReader())
+            try
             {
-                while (reader.Read())
+                _dbConnection.Open();
+                using (var reader = command.ExecuteReader())
                 {
-                    result.Add(Map(reader));
+                    while (reader.Read())
+                    {
+                        result.Add(Map(reader));
+                    }
+
+                    return result;
                 }
-                return result;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return new List<T>();
+            }
+            finally
+            {
+                _dbConnection.Close();
             }
         }
     }

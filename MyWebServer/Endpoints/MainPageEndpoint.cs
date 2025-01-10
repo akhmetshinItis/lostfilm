@@ -23,18 +23,25 @@ public class MainPageEndpoint : EndpointBase
     public IHttpResponseResult Index()
     {
         var localPath = "Views/Templates/Pages/MainPage/index.html";
-        var responseText = _responseHelper.GetResponseTextCustomPath(localPath);
-        var movieCardsRepository = new MovieCardRepository();
-        var movieCards = movieCardsRepository.GetMovieCards();
-        var model = new MainPageDataVm
+        try
         {
-            MovieCards = movieCards,
-            Genres = new Repository<Genre>().GetAll(),
-            IsAuthorized = _authorizationHelper.IsAuthorized(Context),
-        };
-        CheckAuthorization(model);
-        var page = _htmlTemplateEngine.Render(responseText, model);
-        return Html(page);
+            var responseText = _responseHelper.GetResponseTextCustomPath(localPath);
+            var movieCardsRepository = new MovieCardRepository();
+            var movieCards = movieCardsRepository.GetMovieCards();
+            var model = new MainPageDataVm
+            {
+                MovieCards = movieCards,
+                Genres = new Repository<Genre>().GetAll(),
+                IsAuthorized = _authorizationHelper.IsAuthorized(Context),
+            };
+            CheckAuthorization(model);
+            var page = _htmlTemplateEngine.Render(responseText, model);
+            return Html(page);
+        }
+        catch (Exception e)
+        {
+            return Redirect($"/error?error={e.ToString()}");
+        }
     }
     
     private void CheckAuthorization(MainPageDataVm model)

@@ -80,6 +80,7 @@ body {
 .header__search {
   background-color: transparent;
   font-size: 16px;
+  padding-right: 70px;
 }
 
 .start {
@@ -331,8 +332,6 @@ body {
   font-size: 12px;
   font-weight: bold;
 }
-
-
 
 .episodes__link {
   display: inline-flex;

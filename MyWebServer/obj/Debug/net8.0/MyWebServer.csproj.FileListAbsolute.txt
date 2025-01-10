@@ -207,3 +207,4 @@
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/404.html
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/MainPage/index.html
 /Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Templates/Pages/ErrorPage/Error.html
+/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/MyWebServer/bin/Debug/net8.0/Views/Public/styles/adaptive-film-page.css

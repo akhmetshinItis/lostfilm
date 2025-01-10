@@ -34,7 +34,8 @@ public class FilmPageDataRepository
                 ISNULL(md.Website, 0) AS Website,
                 ISNULL(md.ImageUrl, 0) AS ImageUrl,
                 ISNULL(md.Type, '') AS Type,
-                STRING_AGG(g.Name, ', ') AS GenreNames
+                STRING_AGG(g.Name, ', ') AS GenreNames,
+                ISNULL(md.Description, '') as Description
             FROM MoviesCatalog.dbo.Movies m
             LEFT JOIN MoviesCatalog.dbo.MovieDetails md ON m.Id = md.MovieId
             LEFT JOIN MoviesCatalog.dbo.MovieGenres mg ON m.Id = mg.MovieId
@@ -42,7 +43,7 @@ public class FilmPageDataRepository
             WHERE m.Id = @MovieId
             GROUP BY 
                 m.Id, m.TitleRu, m.TitleEng, m.ReleaseDateWorld, m.ReleaseDateRu, 
-                md.RatingIMDb, md.Rating, md.Website, md.Duration, md.Type, md.ImageUrl
+                md.RatingIMDb, md.Rating, md.Website, md.Duration, md.Type, md.ImageUrl, md.Description
         ";
 
         using (var connection = new SqlConnection(_connectionString))
@@ -69,7 +70,8 @@ public class FilmPageDataRepository
                             Type = reader["Type"].ToString(),
                             GenreNames = reader["GenreNames"].ToString(),
                             Website = reader["Website"].ToString(),
-                            ImageUrl = reader["ImageUrl"].ToString()
+                            ImageUrl = reader["ImageUrl"].ToString(),
+                            Description = reader["Description"].ToString()
                         };
                     }
                 }
