@@ -88,7 +88,7 @@ public class HtmlTemplateEngineTests
         //Act
         var result = engine.Render(template: template, user);
         //Assert
-        Assert.AreEqual("book boob bob ", result);
+        Assert.AreEqual("<li>book</li><li>boob</li><li>bob</li>", result);
     }
     
     [Test]
@@ -98,11 +98,14 @@ public class HtmlTemplateEngineTests
         User user = new User{Id = 1, Name = "Bob", Gender = false, Age = 17, Books = new List<string> { "book", "boob", "bob" }};
         HtmlTemplateEngine engine = new HtmlTemplateEngine();
         var filePath = new FileInfo(
-            "/Users/tagirahmetsin/2nd course/oris/oris 05.11/MyWebServer/TemplateEngine.UnitTests/Templates/UserProfile_template.html");
+            "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemplateEngine.UnitTests/Templates/UserProfile_template.html");
         // Act
         var result = engine.Render(filePath, user);
-        //Console.WriteLine(result);
+        Console.WriteLine(result);
+        var expect =
+            File.ReadAllText(
+                "/Users/tagirahmetsin/2nd course/oris/Семетровка орис/Repository/lostfilm/TemplateEngine.UnitTests/Templates/Result.html");
         // Assert
-        Assert.Pass(result);
+        Assert.AreEqual(expect, result);
     }
 }

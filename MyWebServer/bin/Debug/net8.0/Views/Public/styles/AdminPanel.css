@@ -96,3 +96,42 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #004080;
 }
+#movies-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Фиксированная ширина для столбцов */
+    overflow-x: auto; /* Горизонтальная прокрутка для всей таблицы */
+}
+
+#movies-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Убираем фиксированную ширину для столбцов */
+    overflow-x: auto; /* Горизонтальная прокрутка для всей таблицы */
+}
+
+#movies-table th, #movies-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#movies-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+#movie-details td {
+    height: 50px; /* Фиксированная высота для ячеек */
+    max-width: 200px; /* Ограничение ширины для ячеек */
+    overflow: hidden; /* Скрыть переполненный текст */
+    text-overflow: ellipsis; /* Многоточие для переполненных ячеек */
+    white-space: nowrap; /* Запрещаем перенос текста */
+}
+
+/* Стиль для ячеек с длинным текстом, например, Description */
+#movie-details td.description {
+    height: 80px; /* Фиксированная высота */
+    overflow-y: auto; /* Вертикальная прокрутка при переполнении */
+    white-space: nowrap; /* Разрыв текста */
+}

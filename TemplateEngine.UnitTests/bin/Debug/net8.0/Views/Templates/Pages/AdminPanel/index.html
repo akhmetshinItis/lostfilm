@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
-    <script src="./assets/js/indexScript.js"></script>
-    <link rel="stylesheet" href="./assets/css/AdminPanel.css">
+    <link rel="stylesheet" href="styles/AdminPanel.css">
     
 </head>
 <body>
@@ -22,16 +21,25 @@
             <th>TitleEng</th>
             <th>ReleaseDateWorld</th>
             <th>ReleaseDateRU</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody>
         {%for%Movie%in%Movies}
         <tr>
-            <td>{{Movie.MovieId}}</td>
+            <td>{{Movie.Id}}</td>
             <td>{{Movie.TitleRu}}</td>
             <td>{{Movie.TitleEng}}</td>
             <td>{{Movie.ReleaseDateWorld}}</td>
             <td>{{Movie.ReleaseDateRu}}</td>
+            <td>
+                <form action="admin/movies/update" method="get">
+                    <input type="hidden" name="id" value="{{Movie.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
@@ -47,10 +55,16 @@
 
         <label for="releaseDateWorld">Release Date (World):</label>
         <input type="date" id="releaseDateWorld" name="ReleaseDateWorld" required>
-        <label for="releaseDateWorld">Release Date (Ru):</label>
+        <label for="releaseDateRu">Release Date (Ru):</label>
         <input type="date" id="releaseDateRu" name="ReleaseDateRu" required>
 
         <button type="submit">Add Movie</button>
+    </form>
+
+    <form action="admin/movies/delete" method="post">
+        <label for="movieId">MovieId:</label>
+        <input type="number" id="movieId" name="MovieId" required>
+        <button type="submit">Delete Movie</button>
     </form>
 </section>
 
@@ -66,18 +80,31 @@
             <th>Type</th>
             <th>Description</th>
             <th>ImageUrl</th>
+            <th>Rating</th>
+            <th>Website</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody id="movie-details-table">
         {%for%MovieDetail%in%MovieDetailsList}
         <tr>
-            <td>{{MovieDetail.MovieDetailId}}</td>
+            <td>{{MovieDetail.Id}}</td>
             <td>{{MovieDetail.MovieId}}</td>
             <td>{{MovieDetail.RatingIMDb}}</td>
             <td>{{MovieDetail.Duration}}</td>
             <td>{{MovieDetail.Type}}</td>
             <td>{{MovieDetail.Description}}</td>
             <td>{{MovieDetail.ImageUrl}}</td>
+            <td>{{MovieDetail.Rating}}</td>
+            <td>{{MovieDetail.Website}}</td>
+            <td>
+                <form action="admin/details/update" method="get">
+                    <input type="hidden" name="id" value="{{MovieDetail.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
@@ -91,11 +118,17 @@
         <label for="ratingIMDb">Rating IMDb:</label>
         <input type="number" step="0.1" id="ratingIMDb" name="RatingIMDb" required>
 
+        <label for="ratingIMDb">Rating</label>
+        <input type="number" step="0.1" id="rating" name="Rating" required>
+    
         <label for="duration">Duration (minutes):</label>
         <input type="number" id="duration" name="Duration" required>
 
         <label for="type">Type:</label>
         <input type="text" id="type" name="Type" required>
+
+        <label for="website">Website</label>
+        <input type="text" id="website" name="Website">
 
         <label for="description">Description:</label>
         <textarea id="description" name="Description" required></textarea>
@@ -115,30 +148,39 @@
             <th>Name</th>
             <th>Description</th>
             <th>UsageCount</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody id="genres-table">
         {%for%Genre%in%Genres}
         <tr>
-            <td>{{Genre.GenreId}}</td>
+            <td>{{Genre.Id}}</td>
             <td>{{Genre.Name}}</td>
             <td>{{Genre.Description}}</td>
             <td>{{Genre.UsageCount}}</td>
+            <td>
+                <form action="admin/genres/update" method="get">
+                    <input type="hidden" name="id" value="{{Genre.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
     </table>
 
-    <form id="add-genre-form">
+    <form id="add-genre-form" action="admin/genres/add" method="post">
         <h3>Add New Genre</h3>
         <label for="genreName">Name:</label>
-        <input type="text" id="genreName" name="genreName" required>
+        <input type="text" id="genreName" name="Name" required>
 
         <label for="GenreDescription">Description:</label>
-        <textarea id="GenreDescription" name="GenreDescription" required></textarea>
+        <textarea id="GenreDescription" name="Description" required></textarea>
 
         <label for="usageCount">Usage Count:</label>
-        <input type="number" id="usageCount" name="usageCount" required>
+        <input type="number" id="usageCount" name="UsageCount" required>
 
         <button type="submit">Add Genre</button>
     </form>
@@ -154,29 +196,38 @@
             <th>MovieId</th>
             <th>GenreId</th>
             <th>AddedDate</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody id="movie-genres-table">
         {%for%MovieGenre%in%MovieGenres}
         <tr>
-            <td>{{MovieGenre.MovieGenreId}}</td>
+            <td>{{MovieGenre.Id}}</td>
             <td>{{MovieGenre.MovieId}}</td>
             <td>{{MovieGenre.GenreId}}</td>
             <td>{{MovieGenre.AddedDate}}</td>
+            <td>
+                <form action="admin/moviesgenres/update" method="get">
+                    <input type="hidden" name="id" value="{{MovieGenre.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
     </table>
 
-    <form id="add-movie-genre-form">
+    <form id="add-movie-genre-form" action="/admin/moviesgenres/add" method="post">
         <h3>Add New Movie Genre</h3>
         <label for="movieGenreMovieId">MovieId:</label>
-        <input type="number" id="movieGenreMovieId" name="movieGenreMovieId" required>
+        <input type="number" id="movieGenreMovieId" name="MovieId" required>
 
         <label for="movieGenreGenreId">GenreId:</label>
-        <input type="number" id="movieGenreGenreId" name="movieGenreGenreId" required>
+        <input type="number" id="movieGenreGenreId" name="GenreId" required>
         <label for="movieGenreGenreId">AddedDate:</label>
-        <input type="date" id="movieGenreAddedDate" name="movieGenreAddedDate" required>
+        <input type="date" id="movieGenreAddedDate" name="AddedDate" required>
 
         <button type="submit">Add Movie Genre</button>
     </form>
@@ -192,33 +243,43 @@
             <th>Username</th>
             <th>Login</th>
             <th>Password</th>
+            <th>Update</th>
         </tr>
         </thead>
         <tbody id="users-table">
         {%for%User%in%Users}
         <tr>
-            <td>{{User.UserId}}</td>
+            <td>{{User.Id}}</td>
             <td>{{User.Username}}</td>
             <td>{{User.Login}}</td>
             <td>{{User.Password}}</td>
+            <td>
+                <form action="admin/users/update" method="get">
+                    <input type="hidden" name="id" value="{{User.Id}}" />
+                    <button type="submit" style="all: unset;">
+                        Update
+                    </button>
+                </form>
+            </td>
         </tr>
         {%/for%}
         </tbody>
     </table>
 
-    <form id="add-user-form">
+    <form id="add-user-form" action="admin/users/add" method="post">
         <h3>Add New User</h3>
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="Username" required>
 
         <label for="login">Login:</label>
-        <input type="text" id="login" name="login" required>
+        <input type="text" id="login" name="Login" required>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="text" id="password" name="Password" required>
 
         <button type="submit">Add User</button>
     </form>
 </section>
 </body>
+<script src="./assets/js/indexScript.js"></script>
 </html>

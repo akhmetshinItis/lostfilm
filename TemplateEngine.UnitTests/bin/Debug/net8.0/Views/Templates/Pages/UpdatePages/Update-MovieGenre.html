@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/AdminPanel.css">
+    <meta charset="UTF-8">
+    <title>Update Movie Genre</title>
+</head>
+<body>
+<form id="update-movie-genre-form" action="" method="post">
+    <h3>Update Movie Genre</h3>
+
+    <label for="Id">Id</label>
+    <input type="text" id="Id" name="Id" value="{{Id}}" readonly>
+
+    <label for="movieGenreMovieId">MovieId:</label>
+    <input type="number" id="movieGenreMovieId" name="MovieId" value="{{MovieId}}">
+
+    <label for="movieGenreGenreId">GenreId:</label>
+    <input type="number" id="movieGenreGenreId" name="GenreId" value="{{GenreId}}">
+
+    <label for="movieGenreAddedDate">AddedDate:</label>
+    <input type="date" id="movieGenreAddedDate" name="AddedDate" value="{{AddedDate}}">
+
+    <button type="submit">Update Movie Genre</button>
+</form>
+<script src="/assets/js/UpdateMovieGenreScript.js"></script>
+</body>
+</html>

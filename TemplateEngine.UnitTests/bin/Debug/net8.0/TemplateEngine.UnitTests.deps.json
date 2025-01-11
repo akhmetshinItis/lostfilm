@@ -10,12 +10,12 @@
         "dependencies": {
           "HttpServerLibrary": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",
+          "MyWebServer": "1.0.0",
           "NUnit": "3.14.0",
           "NUnit.Analyzers": "3.9.0",
           "NUnit3TestAdapter": "4.5.0",
           "TemlateEngine": "1.0.0",
-          "coverlet.collector": "6.0.0",
-          "my-http": "1.0.0"
+          "coverlet.collector": "6.0.0"
         },
         "runtime": {
           "TemplateEngine.UnitTests.dll": {}
@@ -819,20 +819,6 @@
           }
         }
       },
-      "my-http/1.0.0": {
-        "dependencies": {
-          "HttpServerLibrary": "1.0.0",
-          "MyORMLibrary": "1.0.0",
-          "System.Data.SqlClient": "4.9.0",
-          "TemlateEngine": "1.0.0"
-        },
-        "runtime": {
-          "my-http.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "MyORMLibrary/1.0.0": {
         "dependencies": {
           "Microsoft.Data.SqlClient": "6.0.0-preview3.24332.3",
@@ -840,6 +826,20 @@
         },
         "runtime": {
           "MyORMLibrary.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MyWebServer/1.0.0": {
+        "dependencies": {
+          "HttpServerLibrary": "1.0.0",
+          "MyORMLibrary": "1.0.0",
+          "System.Data.SqlClient": "4.9.0",
+          "TemlateEngine": "1.0.0"
+        },
+        "runtime": {
+          "MyWebServer.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1237,12 +1237,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "my-http/1.0.0": {
+    "MyORMLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "MyORMLibrary/1.0.0": {
+    "MyWebServer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/film-page.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/adaptive.css" />
+    <link rel="icon" href="https://www.lostfilm.tv/favicon.ico" />
+    <title>Лучшие зарубежные фильмы</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-background">
+        <a href="">
+          <div class="header-background__img-container">
+            <img
+              class="header-background__img"
+              src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-1/99/29/27/79/57/30/100025716326b2.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+      <div class="header-upper">
+        <img class="header__logo" src="assets/images/logo.png" alt="" />
+        <header class="header">
+          <nav class="header__nav">
+            <div class="header__nav--left">
+              <ul class="header__list">
+                <li class="header__link">
+                  <a href="">Сериалы</a>
+                </li>
+                <li class="header__link header__link--decorated">
+                  <a href="">Кино</a>
+                </li>
+                <li class="header__link">
+                  <a href="">Новости</a>
+                </li>
+                <li class="header__link">
+                  <a href="">Видео</a>
+                </li>
+                <li class="header__link">
+                  <a href="">Новинки</a>
+                </li>
+                <li class="header__link">
+                  <a href="">Расписание</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__nav--right">
+              <input class="header__search" type="text" placeholder="Поиск" />
+              <img class="header__icon" src="assets/icons/search.svg" alt="" />
+            </div>
+          </nav>
+        </header>
+        <main class="main">
+          <section class="start">
+            <div class="start__title-container">
+              <div class="start__title-container--small">
+                <h1 class="start__title">{{TitleRu}}</h1>
+                <p class="start__title--eng">{{TitleEng}}</p>
+              </div>
+              <div class="start__buttons-container">
+                {%if<{{IsAuthorized}}>%}
+                <a class="start__button" href="">
+                  <img
+                    src="https://www.lostfilm.tv/vision/blue-star-icon.png"
+                    alt=""
+                  />
+                  добавить в избранное
+                </a>
+                {%/if%}
+                <a class="start__button" href="">
+                  <img
+                    src="https://www.lostfilm.tv/vision/pink-eye-icon.png"
+                    alt=""
+                  />
+                  фильм не просмотрен
+                </a>
+              </div>
+            </div>
+            <div class="start__sign-in">
+              {%if<{{IsAuthorized}}>%}
+              <p class="start__link"> {{Username}} </p>
+              {%else%}
+              <a class="start__link" href="login"> Войти </a>
+              {%/if%}
+            </div>
+          </section>
+          <section class="main-info">
+            <div class="main-info__head">
+              <div class="main-info__head--left">
+                <div class="film-links">
+                  <ul class="film-links__list">
+                    <li class="film-links__link">
+                      <a href="">о фильме</a>
+                    </li>
+                    <li class="film-links__link">
+                      <a href="">новости</a>
+                    </li>
+                    <li class="film-links__link">
+                      <a href="">видео</a>
+                    </li>
+                    <li class="film-links__link">
+                      <a href="">фото</a>
+                    </li>
+                    <li class="film-links__link">
+                      <a href="">актеры и команда</a>
+                    </li>
+                    <li class="film-links__link">
+                      <a href="">обсуждение</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="film">
+                  <div class="episodes__item">
+                    <div class="film-container">
+                      <a href="" class="episodes__item--link">
+                        <img
+                          class="episodes__img"
+                          src="{{ImageUrl}}"
+                          alt=""
+                        />
+                        <div class="episodes__info">
+                          <div class="film-info__rate">
+                            <span class="film-info__rate--number">{{Rating}}</span>
+                          </div>
+                          <p class="episodes__info--text">
+                            оценка пользователей
+                            lostfilm.tv
+                          </p>
+
+                          <div class="episodes__info-rate-container">
+                            <p class="episodes__info--text">ваша оценка</p>
+                            <ul class="rate">
+                              <li class="rate__part"></li>
+                              <li class="rate__part"></li>
+                              <li class="rate__part"></li>
+                              <li class="rate__part"></li>
+                              <li class="rate__part"></li>
+                              <li class="rate__part"></li>
+                              <li class="rate__part"></li>
+                              <li class="rate__part"></li>
+                              <li class="rate__part"></li>
+                              <li class="rate__part"></li>
+                            </ul>
+                          </div>
+
+                          <div class="episodes-info__link">
+                            <a href="">
+                              <img
+                                class="episodes-info__link--pic"
+                                src="./assets/images/red-btn.png"
+                                alt=""
+                              />
+                            </a>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="film-details">
+                      <div class="film-details__left">
+                        <p class="film-details__text">
+                          Дата выхода ru:
+<!--                          4 октября 2024 г.-->
+                          <span class="film-details__date-ru"
+                            >{{ReleaseDateRu}}</span
+                          >
+                        </p>
+                        <p class="film-details__text">
+                          Дата выхода eng:
+                          <span class="film-details__date-eng"
+                            >{{ReleaseDateWorld}}</span
+                          >
+                        </p>
+                        <p class="film-details__text">
+                          Рейтинг IMDb:
+                          <span class="film-details__rate">{{ImdbRating}}</span>
+                        </p>
+                        <p class="film-details__text">
+                          Длительность:
+                          <span class="film-details__time">{{Duration}}</span>
+                        </p>
+                      </div>
+                      <div class="film-details__right">
+                        <p class="film-details__text">
+                          Жанр:
+                          <span class="film-details__genre">{{GenreNames}}</span>
+                        </p>
+                        <p class="film-details__text">
+                          Тип:
+                          <span class="film-details__type">{{Type}}</span>
+                        </p>
+                        <p class="film-details__text">
+                          Официальный сайт:
+                          <span class="film-details__site"
+                            >{{Website}}</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div class="film__description">
+                      <div class="start__title-container">
+                        <div class="start__title-container--small">
+                          <h1 class="start__title">Описание</h1>
+                          <div class="film__description--spoilers">
+                            <img
+                                    src="https://www.lostfilm.tv/vision/tiny-warning-icon.png"
+                                    alt=""
+                            />
+                            <p>Осторожно, возможны спойлеры!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="film__decription-container">
+                        <p class="film__description--text">
+                          {{Description}}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="contacts">
+                      <p class="contacts__text">Поделиться:</p>
+                      <ul class="contacts__list">
+                        <li class="contacts__contact">
+                          <img
+                                  src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_vkontakte.svg"
+                                  alt=""
+                          />
+                        </li>
+                        <li class="contacts__contact">
+                          <img
+                                  src="	https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_odnoklassniki.svg"
+                                  alt=""
+                          />
+                        </li>
+                        <li class="contacts__contact">
+                          <img
+                                  src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_telegram.svg"
+                                  alt=""
+                          />
+                        </li>
+                        <li class="contacts__contact">
+                          <img
+                                  src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_twitter.svg"
+                                  alt=""
+                          />
+                        </li>
+                        <li class="contacts__contact">
+                          <img
+                                  src="https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_viber.svg"
+                                  alt=""
+                          />
+                        </li>
+                        <li class="contacts__contact">
+                          <img
+                                  src="	https://solea-parent.dfs.ivi.ru/picture/ffffff,ffffff/social_linkedin.svg"
+                                  alt=""
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="main-info__head--right">
+                <p class="main-info__head--text">
+                  Новинки
+                  <span class="main-info__head--decorated">серий</span> /
+                  <span class="main-info__head--decorated main-info__head--grey"
+                    >сезонов</span
+                  >
+                </p>
+                <ul class="episodes">
+                  <li class="episodes__item">
+                    <a href="" class="episodes__item--link">
+                      <img
+                        class="episodes__img"
+                        src="https://avatars.mds.yandex.net/i?id=98f3b2f84123e31d09faaf59fa29496d_l-12433518-images-thumbs&n=13"
+                        alt=""
+                      />
+                      <div class="episodes__info">
+                        <p class="episodes__number">1 сезон 7 серия</p>
+                        <p class="episodes__date">07.01.2025</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="episodes__item">
+                    <a href="" class="episodes__item--link">
+                      <img
+                        class="episodes__img"
+                        src="https://avatars.mds.yandex.net/i?id=98f3b2f84123e31d09faaf59fa29496d_l-12433518-images-thumbs&n=13"
+                        alt=""
+                      />
+                      <div class="episodes__info">
+                        <p class="episodes__number">1 сезон 7 серия</p>
+                        <p class="episodes__date">07.01.2025</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="link__container">
+                  <a class="episodes__link" href=""
+                    >все новинки
+                    <img
+                      class="episodes__icon"
+                      src="assets/icons/play.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

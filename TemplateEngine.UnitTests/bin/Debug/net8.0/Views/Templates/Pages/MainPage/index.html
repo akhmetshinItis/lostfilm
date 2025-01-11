@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/adaptive.css" />
+    <title>Main Page</title>
+
+    {%if<{{IsAuthorized}}>%}
+    {%else%}
+    <style>
+      .film-info__bookmark {
+        display: none;
+      }
+    </style>
+    {%/if%}
+    
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-background">
+        <a href="">
+          <div class="header-background__img-container">
+            <img
+              class="header-background__img"
+              src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/-1/99/29/27/79/57/30/100025716326b2.jpg"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+      <div class="header-upper">
+        <img class="header__logo" src="assets/images/logo.png" alt="" />
+        <header class="header">
+          <nav class="header__nav">
+            <div class="header__nav--left">
+              <ul class="header__list">
+                <li class="header__link">
+                  <a href="">Сериалы</a>
+                </li>
+                <li class="header__link header__link--decorated">
+                  <a href="">Кино</a>
+                </li>
+                <li class="header__link">
+                  <a href="">Новости</a>
+                </li>
+                <li class="header__link">
+                  <a href="">Видео</a>
+                </li>
+                <li class="header__link">
+                  <a href="">Новинки</a>
+                </li>
+                <li class="header__link">
+                  <a href="">Расписание</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__nav--right">
+              <input class="header__search" type="text" placeholder="Поиск" />
+              <img class="header__icon" src="assets/icons/search.svg" alt="" />
+            </div>
+          </nav>
+        </header>
+        <main class="main">
+          <section class="start">
+            <div class="start__title-container">
+              <h1 class="start__title">Фильмы</h1>
+            </div>
+            <div class="start__sign-in">
+              {%if<{{IsAuthorized}}>%}
+              <p class="start__link"> {{Username}} </p>
+              {%else%}
+              <a class="start__link" href="login"> Войти </a>
+              {%/if%}
+            </div>
+          </section>
+          <section class="main-info">
+            <div class="main-info__head">
+              <div class="main-info__head--left">
+                <div class="start__filter-container">
+                  <label class="start__filter-label" for="options"
+                    >Сортировать:</label
+                  >
+                  <select class="start__filter" name="" id="options">
+                    <option value="">По новизне</option>
+                    <option value="">По алфавиту</option>
+                    <option value="">По рейтингу</option>
+                    <option value="">По новизне</option>
+                  </select>
+                </div>
+              </div>
+              <div class="main-info__head--right">
+                <p class="main-info__head--text">
+                  Новинки
+                  <span class="main-info__head--decorated">серий</span> /
+                  <span class="main-info__head--decorated main-info__head--grey"
+                    >сезонов</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="main-content">
+              <div class="main-content__left">
+                <div class="genre">
+                  <p class="genre__title">Выбрать жанр:</p>
+                  <ul class="genre__list">
+                    {%for%Genre%in%Genres}
+                    <li class="genre__item">
+                      <p class="genre__name">{{Genre.Name}}</p>
+                    </li>
+                    {%/for%}
+                  </ul>
+                </div>
+
+                <div class="film-info">
+                  <ul class="film-info__list">
+                    {%for%MovieCard%in%MovieCards}
+                    <form action="film" method="get">
+                      <input type="hidden" name="id" value="{{MovieCard.Id}}" />
+                      <button type="submit" style="background-color:transparent; all: unset; z-index: 1; cursor: pointer;">
+                    <li class="film-info__film">
+                      <img
+                        class="film-info__img"
+                        src="{{MovieCard.ImageUrl}}"
+                        alt=""
+                      />
+                      <div class="film-info__details">
+                        <div class="film-info__details--header">
+                          <div class="film-info__name-container">
+                            <h3 class="film-info__title">{{MovieCard.TitleRu}}</h3>
+                            <p class="film-info__title--eng">
+                              {{MovieCard.TitleEng}}
+                            </p>
+                          </div>
+                          <div class="film-info__rate">
+                            <span class="film-info__rate--number">{{MovieCard.Rating}}</span>
+                          </div>
+                        </div>
+                        <div class="film-info__bottom">
+                          <div class="film-info__bottom--left">
+                            <p class="film-info__text">
+                              Год выхода:
+                              <span class="film-info__year">{{MovieCard.ReleaseYear}}</span>
+                            </p>
+                            <p class="film-info__text">
+                              Жанр:
+                              <span class="film-info__genre">{{MovieCard.Genre}}</span>
+                            </p>
+                          </div>
+                          <div class="film-info__bottom--right">
+                            <a href="" class="film-info__bookmark"
+                              ><img src="assets/images/star.png" alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                      </button>
+                    </form>
+                    </li>
+                    {%/for%}
+                  </ul>
+                </div>
+              </div>
+              <div class="main-content__right">
+                <ul class="episodes">
+                  <li class="episodes__item">
+                    <a href="" class="episodes__item--link">
+                      <img
+                        class="episodes__img"
+                        src="https://avatars.mds.yandex.net/i?id=98f3b2f84123e31d09faaf59fa29496d_l-12433518-images-thumbs&n=13"
+                        alt=""
+                      />
+                      <div class="episodes__info">
+                        <p class="episodes__number">1 сезон 7 серия</p>
+                        <p class="episodes__date">07.01.2025</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="episodes__item">
+                    <a href="" class="episodes__item--link">
+                      <img
+                        class="episodes__img"
+                        src="https://avatars.mds.yandex.net/i?id=98f3b2f84123e31d09faaf59fa29496d_l-12433518-images-thumbs&n=13"
+                        alt=""
+                      />
+                      <div class="episodes__info">
+                        <p class="episodes__number">1 сезон 7 серия</p>
+                        <p class="episodes__date">07.01.2025</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="link__container">
+                  <a class="episodes__link" href=""
+                    >все новинки
+                    <img
+                      class="episodes__icon"
+                      src="assets/icons/play.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <p class="footer__p">
+            <a href="" class="footer__link">Сериалы</a> |
+            <a href="" class="footer__link">Новости</a> |
+            <a href="" class="footer__link">Новинки</a> |
+            <a href="" class="footer__link">Видео</a> |
+            <a href="" class="footer__link">Расписание</a> |
+            <a href="" class="footer__link">Официальная группа в VK</a> |
+          </p>
+          <p class="footer__p">
+            <a href="">О проекте</a> | <a href="">Правила</a> |
+            <a href="">FAQ</a> | <a href="">Размещение рекламы</a> |
+            <a href="">Обратная связь</a> | <a href="">RSS</a> |
+          </p>
+          <p class="footer__p">
+            LostFilm.TV. Лучшие сериалы, 2025 г. Копирование материалов сайта
+            запрещено.
+          </p>
+          <a class="footer__img" href=""
+            ><img src="assets/icons/arrow-up.svg" alt=""
+          /></a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

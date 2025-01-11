@@ -106,12 +106,12 @@
     &lt;ProjectFile&gt;A1560E1E-97E2-4215-BECF-E3D768499580/f:HtmlTemplateEngineTests.cs&lt;/ProjectFile&gt;
   &lt;/Or&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cf9fa26c_002D1436_002D4626_002Da647_002D3d0aa889afe1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Render_ValidObjectWithCollection_ReturnHtml" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cf9fa26c_002D1436_002D4626_002Da647_002D3d0aa889afe1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Render_ValidObjectWithCollection_ReturnHtml" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests.Render_ValidObjectWithCollection_ReturnHtml&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e0dd1200_002D7d18_002D42c1_002D8a81_002D3ac96d49d413/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="HtmlTemplateEngineTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e0dd1200_002D7d18_002D42c1_002D8a81_002D3ac96d49d413/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="HtmlTemplateEngineTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::A1560E1E-97E2-4215-BECF-E3D768499580::net8.0::TemplateEngine.UnitTests.HtmlTemplateEngineTests&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::9FD850E7-EE4C-4E3D-A773-246846174AB9::net8.0::MyORMLibraryTests.ORMContextTests&lt;/TestId&gt;
