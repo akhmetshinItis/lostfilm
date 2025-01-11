@@ -52,6 +52,12 @@ document.getElementById('add-movie-form').addEventListener('submit', async funct
             alert('Такой фильм уже есть');
             throw new Error('Такой фильм уже есть');
         }
+
+        if (result.Message != null){
+            alert("Error " + result.Message)
+            return;
+        }
+        
         console.log(result)
         // Создаем новую строку таблицы
         const newRow = document.createElement('tr');
@@ -123,6 +129,11 @@ document.getElementById('add-movie-detail-form').addEventListener('submit', asyn
             throw new Error('Такие детали уже существуют');
         }
 
+        if (result.Message != null){
+            alert("Error " + result.Message)
+            return;
+        }
+
         // Создаем новую строку таблицы
         const newRow = document.createElement('tr');
         newRow.innerHTML += `
@@ -187,6 +198,12 @@ document.getElementById('add-genre-form').addEventListener('submit', async funct
         if (result == false) {
             alert('Такой жанр уже существует');
             throw new Error('Такой жанр уже существует');
+        }
+
+
+        if (result.Message != null){
+            alert("Error " + result.Message)
+            return;
         }
 
         // Создаем новую строку таблицы
@@ -265,6 +282,11 @@ document.getElementById('add-movie-genre-form').addEventListener('submit', async
                 throw new Error('Такая связь уже существует');
             }
 
+        if (result.Message != null){
+            alert("Error " + result.Message)
+            return;
+        }
+        
             if(result == 1){
                 alert("некорректная связь");
                 throw new Error('incorrect constraint');
@@ -344,6 +366,12 @@ document.getElementById('add-user-form').addEventListener('submit', async functi
             throw new Error('Такой пользователь уже существует');
         }
 
+
+        if (result.Message != null){
+            alert("Error " + result.Message)
+            throw new Error('Такой пользователь уже существует');
+        }
+        
         // Создаем новую строку таблицы
         const newRow = document.createElement('tr');
         newRow.innerHTML += `

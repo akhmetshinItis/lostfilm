@@ -1,0 +1,10 @@
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Гладиатор 2', N'Gladiator II', N'2023-11-15', N'2024-12-28');
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Веном: Последний танец', N'Venom: The Last Dance', N'2024-10-25', N'2024-12-13');
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Джокер: Безумие на двоих', N'Joker: Folie à Deux', N'2024-09-04', N'2024-11-02');
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Платформа 2', N'The Platform 2', N'2024-10-04', N'2024-10-04');
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Дикий робот', N'The Wild Robot', N'2024-10-20', N'2024-09-27');
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Одинокие волки', N'Wolfs', N'2024-09-20', N'2024-10-04');
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Трансформеры: Начало', N'Transformers One', N'2024-09-20', N'2024-10-24');
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Битлджус Битлджус', N'Beetlejuice Beetlejuice', N'2024-09-06', N'2024-10-10');
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Чужой: Ромул', N'Alien: Romulus', N'2024-08-15', N'2024-10-18');
+INSERT INTO MoviesCatalog.dbo.Movies (TitleRu, TitleEng, ReleaseDateWorld, ReleaseDateRu) VALUES (N'Хранители: Часть 1', N'Watchmen: Chapter 1', N'2024-08-13', N'2024-08-27');

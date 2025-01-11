@@ -54,7 +54,16 @@ public class HttpServerWithTypes
     {
         _listener.Start();
         Console.WriteLine("Server started");
-        Receive();
+        try
+        {
+            Receive();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            Stop();
+            Start();
+        }
     }
 
     /// <summary>
@@ -91,32 +100,19 @@ public class HttpServerWithTypes
     /// <param name="context"></param>
     private void HandleRequest(HttpListenerContext context)
     {
-        
-        _staticFileHandler.Successor = _endpointsHandler; //назначаем следующий обработчик для staticFileHandler
-        var requestContext = new HttpRequestContext(context.Request, context.Response); 
-        _staticFileHandler.HandleRequest(requestContext);
-        _endpointsHandler.Successor = _notFoundHandler;
-        //TODO: Сделать правильно (пока не знаю как правильно)
-        // try
-        // {
-        //     _staticFileHandler.Successor = _endpointsHandler;
-        //     var requestContext = new HttpRequestContext(context.Request, context.Response);
-        //     _staticFileHandler.HandleRequest(requestContext);
-        // }
-        // catch (Exception e)
-        // {
-        //     switch (e.Message)
-        //     {
-        //         case "Одинаковые Роутинги":
-        //             Stop();
-        //             Console.WriteLine(e.Message);
-        //             break;
-        //         case "Меньше параметров чем требуется":
-        //             Console.WriteLine(e.Message);
-        //             break;
-        //     }
-        //     
-        // }
+        try
+        {
+            _staticFileHandler.Successor = _endpointsHandler; //назначаем следующий обработчик для staticFileHandler
+            var requestContext = new HttpRequestContext(context.Request, context.Response);
+            _staticFileHandler.HandleRequest(requestContext);
+            _endpointsHandler.Successor = _notFoundHandler;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            Stop();
+            Start();
+        }
     }
 
 }

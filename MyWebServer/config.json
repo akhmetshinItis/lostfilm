@@ -5,8 +5,8 @@
   "EmailServiceConfiguration": {
     "Host": "smtp.gmail.com",
     "Port": "25",
-    "UserName": "cataha.c.pemhem@gmail.com",
-    "Password": "mqzfiwnmzsufrwpr"
+    "UserName": "grinch@mail.ru",
+    "Password": "mqzfiwnqweqewqewq"
   },
   "ConnectionString" : "Data Source=localhost;Initial Catalog=MoviesCatalog;User ID=sa;Password=P@ssw0rd;Trust Server Certificate=true;"
 }
