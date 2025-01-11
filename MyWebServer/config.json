@@ -1,5 +1,5 @@
 {
-  "Domain" : "localhost",
+  "Domain" : "*",
   "Port" : "8888", 
   "StaticDirectoryPath" : "Views/Public/",
   "EmailServiceConfiguration": {
@@ -8,5 +8,5 @@
     "UserName": "grinch@mail.ru",
     "Password": "mqzfiwnqweqewqewq"
   },
-  "ConnectionString" : "Data Source=localhost;Initial Catalog=MoviesCatalog;User ID=sa;Password=P@ssw0rd;Trust Server Certificate=true;"
+  "ConnectionString" : "Data Source=sql_server;Initial Catalog=MoviesCatalog;User ID=sa;Password=P@ssw0rd;Trust Server Certificate=true;"
 }

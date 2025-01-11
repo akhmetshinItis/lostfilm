@@ -23,17 +23,25 @@ public class FilmPageEndpoint : EndpointBase
     [Get("film")]
     public IHttpResponseResult Index(int id)
     {
-        if (id == 0)
+        try
         {
-            return Redirect("index");
+            if (id == 0)
+            {
+                return Redirect("index");
+            }
+
+            var localPath = "Views/Templates/Pages/FilmPage/film-page.html";
+            var responseText = _responseHelper.GetResponseTextCustomPath(localPath);
+            var model = new FilmPageDataRepository().GetMovieById(id);
+            CheckAuthorization(model);
+            var page = _htmlTemplateEngine.Render(responseText, model);
+            return Html(page);
         }
-        var localPath = "Views/Templates/Pages/FilmPage/film-page.html";
-        var responseText = _responseHelper.GetResponseTextCustomPath(localPath);
-        var model = new FilmPageDataRepository().GetMovieById(id);
-        CheckAuthorization(model);
-        var page = _htmlTemplateEngine.Render(responseText, model);
-        return Html(page);
-        
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            return Error(e.Message);
+        }
     }
     
     private void CheckAuthorization(FilmPageDataVm model)

@@ -27,19 +27,27 @@ public class AuthEndpoint : EndpointBase
     [Post("login")]
     public IHttpResponseResult Login(string login, string password)
     {
-        var repository = new Repository<User>();
-        var user = repository.FirstOrDefault(u => u.Login == login);
-        if (user is null || user.Password != password)
+        try
         {
-            return Redirect("login");
-        }
-        
-        var token = Guid.NewGuid().ToString();
-        Cookie nameCookie = new Cookie("session-token", token);
-        nameCookie.Path = "/";
-        Context.Response.Cookies.Add(nameCookie);
-        SessionStorage.SaveSession(token, user.Id.ToString());
+            var repository = new Repository<User>();
+            var user = repository.FirstOrDefault(u => u.Login == login);
+            if (user is null || user.Password != password)
+            {
+                return Redirect("login");
+            }
 
-        return Redirect("index");
+            var token = Guid.NewGuid().ToString();
+            Cookie nameCookie = new Cookie("session-token", token);
+            nameCookie.Path = "/";
+            Context.Response.Cookies.Add(nameCookie);
+            SessionStorage.SaveSession(token, user.Id.ToString());
+
+            return Redirect("index");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+            return Error(e.Message);
+        }
     }
 }

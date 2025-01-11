@@ -37,5 +37,6 @@ namespace HttpServerLibrary
         
 
         protected IHttpResponseResult Redirect(string location) => new RedirectResult(location);
+        protected IHttpResponseResult Error(string error) => new ErrorResult(error);
     }
 }
